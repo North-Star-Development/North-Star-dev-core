@@ -1,0 +1,29 @@
+.nav {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #2851E3;
+    padding: 1rem 2rem;
+
+  img {
+      width: 10.5rem;
+      height: 2.6rem;
+  }
+  &__content {
+      display: flex;
+      flex-direction: row;
+      color: #FFFF;
+
+    p {
+        margin: 0.5rem 1rem 0rem 1rem;
+        font-weight: 500;
+      span {
+          cursor: pointer;
+      }  
+    }
+  }
+  button {
+    background: #C3F7B6;
+}
+}
