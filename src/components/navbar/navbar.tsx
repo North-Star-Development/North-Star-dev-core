@@ -15,7 +15,7 @@ const Navbar = () => {
               <p><span>Team</span></p>
               <p><span>Contact Us</span></p>
           </div>
-            <Button text='Get in Touch' />
+            <Button primary={true} text='Get in Touch' />
       </nav>
     );
 }
