@@ -5,10 +5,14 @@ const SplashBottom = () => {
     return (
       <div className="splash__bottom" style={{
         background: "white",
-        width: "100%",
-        marginTop: "-5rem"
+        width: "100%"
       }}>
-       <img src={splashBottomImg} alt="splash bottom" />
+       <img
+        style={{
+            marginTop: "-5rem",
+            width: "100%"
+        }} 
+        src={splashBottomImg} alt="splash bottom" />
       </div>
     );
 }
