@@ -14,8 +14,7 @@ const SplashSection = () => {
                <Button primary={true} text="Get in Touch"  />
                <Button primary={false} text="Learn More" />
              </div>
-         </div>
-         
+         </div>  
          <img src={splashImg} alt="splash section" /> 
      </section>
    );

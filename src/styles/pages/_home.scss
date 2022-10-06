@@ -6,6 +6,7 @@
   justify-content: space-between;
   margin: 4rem 0rem;
 
+
   &__section1{
     display: flex;
     flex-direction: column;
@@ -43,10 +44,9 @@
         display: flex;
     }
   }
-
-  }
+}
   img {
-      margin: 0rem 1.5rem;
+      margin: 2rem 1.5rem;
       width: 70rem;
       height: 60rem;
   }
