@@ -60,11 +60,13 @@
     display: flex;
     background: #fff;
     flex-direction: row;
-    gap: 15rem ;
+    padding-bottom: 9rem;
+
+    gap: 12rem;
   &__img{
       display: flex;
       width: 50rem;
-      margin: 0.5rem 1rem 0.5rem 11rem;
+      margin: 0.5rem 1rem 0.5rem 15rem;
       border-radius: 1rem;
   }
   &__contents {
@@ -76,8 +78,8 @@
     p{
       color: #2563EB;
       font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
+      font-weight: 600;
+      font-size: 15px;
       line-height: 24px;
  
     }
@@ -91,10 +93,10 @@
         margin: 5rem 0rem 0rem 0rem;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 120%;
         color: #6E6E74;
-        width: 70%;
+        width: 75%;
     }
     Button {
         margin-top: 2rem;
@@ -105,4 +107,71 @@
     }
 
   }
+}
+
+// services
+.services {
+    display: flex;
+    flex-direction: row;
+    background: #ffff;
+    padding-bottom: 9rem;
+
+    &__1 {
+        padding: 0rem 0rem 0rem 10rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+     p {
+         color: #2563EB;
+         font-style: normal;
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 20px;
+     }
+     h2 {
+         width: 70%;
+         font-size: 5rem;
+         line-height: 59px;
+         letter-spacing: -2px;
+     }
+     .-p{
+         padding-top: 3rem;
+         width: 70%;
+         font-weight: 500;
+         color: #6E6E74;
+         line-height: 120%;
+     }
+     &-skills{
+         width: 60%;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         padding-top: 4rem;
+        
+        .skill {
+            display: flex;
+            padding: 1rem 1rem;
+
+          img {
+              padding-right: 1rem;
+              max-height: 24px;
+          
+          }
+          .-p2{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            color: #0F172A;
+            
+          }
+        }
+
+     }
+
+    }  
+    &__2 {
+        width: 50rem;
+        margin: 4rem 18rem 0rem 1rem;
+     }
 }
