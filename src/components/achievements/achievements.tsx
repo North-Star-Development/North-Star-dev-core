@@ -37,8 +37,6 @@ const Achievements = () => {
                      </h2>
                     <p className="-a">{detail?.slug}</p>
                 </div>
-              
-
               ))
           }
       </div>

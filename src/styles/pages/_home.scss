@@ -7,7 +7,6 @@
   margin: 4rem 0rem;
   width: 100%;
 
-
   &__section1{
       width: 50%;
     display: flex;
@@ -85,17 +84,12 @@
     }
     h2{
         width: 70%;
+        @include headerContent;
         font-size: 5rem;
-        line-height: 5.9rem;
-        letter-spacing: -2px;
     }
     .about-p {
         margin: 5rem 0rem 0rem 0rem;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 120%;
-        color: #6E6E74;
+         @include paragraphthin;
         width: 75%;
     }
     Button {
@@ -105,7 +99,6 @@
         justify-content: center;
         padding: 1rem;
     }
-
   }
 }
 
@@ -123,25 +116,16 @@
         width: 100%;
     
      p {
-         color: #2563EB;
-         font-style: normal;
-         font-weight: 600;
-         font-size: 1.7rem;
-         line-height: 20px;
+        @include subHeader;
      }
      h2 {
          width: 70%;
-         font-size: 5rem;
-         line-height: 59px;
-         letter-spacing: -2px;
+        @include headerContent;
      }
      .-p{
          padding-top: 3rem;
          width: 70%;
-         font-size: 1.6rem;
-         font-weight: 500;
-         color: #6E6E74;
-         line-height: 120%;
+         @include paragraphthin;
      }
      &-skills{
          width: 60%;
@@ -188,17 +172,12 @@
     padding-bottom: 9rem;
  
    p {
-       color: #2563EB ;
-       font-style: normal;
-       font-weight: 600;
-       font-size: 1.6rem;
+        @include subHeader;
        padding: 0rem 0rem 0.5rem 0rem;
       
    }
    h2 {
-      font-size: 4.5rem;
-      line-height: 59px;
-      letter-spacing: -2px;
+     @include headerContent;
       padding: 0rem 0rem 3rem 0rem;
    }
    &_ {
@@ -225,7 +204,7 @@
            display: flex;
            font-style: normal;
            font-weight: 400;
-           font-size: 1.8rem;
+           font-size: 1.6rem;
            margin: 0rem 2rem 0rem 1rem;
            letter-spacing: -0.01;
            
@@ -248,4 +227,52 @@
         }
      }
    }
+}
+
+
+//offer lists
+.offer {
+    background-color: white;
+    @include centerContent;
+    flex-direction: column;
+    padding-bottom: 9rem;
+    p{
+        @include subHeader;
+    }
+   h2 {
+       @include headerContent;
+   }
+   &__list {
+       padding: 1rem 3rem 1rem 3rem;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 2rem;
+       width: 70vw;
+
+    &_{
+       display: flex;
+       width: 100%; 
+       border: solid 1px #DBEAFE;
+       border-radius: 1rem;
+       padding: 2rem;
+       background-color: white;
+       box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
+
+       &detail {
+           width: 60%;
+        .-head {
+            font-size: 2rem;
+            letter-spacing: 0.03rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 5rem;
+         }
+         .-t{
+             @include paragraphthin
+         }
+       }
+    
+     }
+   }
+
 }
