@@ -5,6 +5,7 @@ import SplashBottom from "./components/splash-section/splash-bottom";
 import About from "./components/about/about";
 import Services from "./components/services/services";
 import Achievements from "./components/achievements/achievements";
+import OfferList from "./components/offer/offer";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Services/>
       <Achievements/>
+      <OfferList />
     </div>
   );
 }

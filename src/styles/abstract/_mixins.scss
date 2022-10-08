@@ -2,3 +2,24 @@
     display: flex;
     align-items: center;
   }
+
+  @mixin headerContent {
+    font-size: 4.5rem;
+    line-height: 59px;
+    letter-spacing: -2px;
+  }
+
+  @mixin subHeader {
+    color: #2563EB;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 20px;
+  }
+
+  @mixin paragraphthin {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #6E6E74;
+    line-height: 120%;
+  }
