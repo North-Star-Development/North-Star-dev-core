@@ -126,7 +126,7 @@
          color: #2563EB;
          font-style: normal;
          font-weight: 600;
-         font-size: 14px;
+         font-size: 1.7rem;
          line-height: 20px;
      }
      h2 {
@@ -138,6 +138,7 @@
      .-p{
          padding-top: 3rem;
          width: 70%;
+         font-size: 1.6rem;
          font-weight: 500;
          color: #6E6E74;
          line-height: 120%;
@@ -158,9 +159,9 @@
           
           }
           .-p2{
-            font-style: normal;
+            font-style: normal;         
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1.8rem;
             line-height: 23px;
             color: #0F172A;
             
@@ -174,4 +175,77 @@
         width: 50rem;
         margin: 4rem 18rem 0rem 1rem;
      }
+}
+
+
+//achievements
+
+.achievements{
+  @include centerContent;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 9rem;
+ 
+   p {
+       color: #2563EB ;
+       font-style: normal;
+       font-weight: 600;
+       font-size: 1.6rem;
+       padding: 0rem 0rem 0.5rem 0rem;
+      
+   }
+   h2 {
+      font-size: 4.5rem;
+      line-height: 59px;
+      letter-spacing: -2px;
+      padding: 0rem 0rem 3rem 0rem;
+   }
+   &_ {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 6rem 0rem 3rem 2rem ;
+      gap: 2rem;
+      background: #2563EB;
+      color: #fff ;
+      border-radius: 1rem;
+
+     &_detail {
+         display: flex;
+         width: 100%;
+       .-h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4.2rem;
+        line-height: 4.0rem;
+       }
+       .-a {
+           width: 40%;
+           color: white;
+           display: flex;
+           font-style: normal;
+           font-weight: 400;
+           font-size: 1.8rem;
+           margin: 0rem 2rem 0rem 1rem;
+           letter-spacing: -0.01;
+           
+       }
+     }
+     &_detail:nth-child(1){
+         margin-left: 5rem;
+         .-a{
+             width: 35%;
+         }
+     }
+     &_detail:nth-child(2){
+        .-a{
+            width: 30%;
+        }
+     }
+     &_detail:nth-child(4){
+        .-a{
+            width: 30%;
+        }
+     }
+   }
 }
