@@ -4,8 +4,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 4rem 0rem;
+  margin-bottom: 4rem;
   width: 100%;
+  background: #2851E3;
 
   &__section1{
       width: 50%;
@@ -243,7 +244,7 @@
        @include headerContent;
    }
    &__list {
-       padding: 1rem 3rem 1rem 3rem;
+       padding: 3rem 3rem 3rem 3rem;
        display: grid;
        grid-template-columns: 1fr 1fr;
        gap: 2rem;
@@ -251,15 +252,17 @@
 
     &_{
        display: flex;
+       justify-content: space-between;
        width: 100%; 
        border: solid 1px #DBEAFE;
        border-radius: 1rem;
-       padding: 2rem;
+       padding: 2rem ;
        background-color: white;
        box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
 
        &detail {
-           width: 60%;
+           width: 70%;
+           padding-bottom: 2rem;
         .-head {
             font-size: 2rem;
             letter-spacing: 0.03rem;
@@ -271,8 +274,63 @@
              @include paragraphthin
          }
        }
+       img {
+           height: 6rem;
+       }
     
      }
    }
 
+   Button {
+       padding: 1rem 3.5rem;
+   }
+
+}
+
+// how we work
+.work {
+    background-color: white;
+    display: flex;
+    padding-bottom: 9rem;
+    &__ {
+        width: 100%;
+        display: flex;
+        height: 31rem;
+       &card {
+           width: 50%;
+           @include centerContent;
+           flex-direction: column;
+           background-color: #2563EB;
+           color: white;
+           padding-top: 5rem;
+         .-we {
+           @include subHeader;
+           color: #fff;  
+           font-size: 1.4rem;
+         } 
+         h2 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 3rem;
+            line-height: 5rem;
+            letter-spacing: -2px;
+            padding-left: 2.8rem;
+         }
+         .-w {
+             @include paragraphthin;
+             color: #CBD5E1;
+            //  display: flex;
+            //  text-align: right;
+             direction: ltr;
+             width: 100%;
+             inline-size: 45rem;
+             overflow-wrap: break-word;
+             padding: 3rem 0rem 0rem 16.2rem;
+         }
+  
+       }
+       img {
+           width: 50%
+       }
+    }
 }

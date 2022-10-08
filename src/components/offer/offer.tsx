@@ -1,6 +1,6 @@
 /// offer
 import React from "react";
-
+import Button from "../button/button";
 const dev = require('../../assets/illustrations/dev.png');
 const ux = require('../../assets/illustrations/ux.png');
 const brand = require('../../assets/illustrations/brand.png');
@@ -44,6 +44,7 @@ const OfferList = () => {
                   </div>
               ))}
           </div>
+          <Button text="Get Started" primary={true} />
       </div>
     );
 }
