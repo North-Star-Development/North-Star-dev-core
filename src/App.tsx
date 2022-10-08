@@ -6,6 +6,7 @@ import About from "./components/about/about";
 import Services from "./components/services/services";
 import Achievements from "./components/achievements/achievements";
 import OfferList from "./components/offer/offer";
+import HowWeWork from "./components/how-we-work/work";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
       <Services/>
       <Achievements/>
       <OfferList />
+      <HowWeWork/>
     </div>
   );
 }
