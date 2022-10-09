@@ -443,7 +443,6 @@
             background: #fff;
             border-radius: 0rem 0rem 1.5rem 1.5rem;
             box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
-            // margin-bottom: -2rem;
             .img_ {
                 width: 100%;
                 margin-top: -0.5rem;
@@ -464,7 +463,73 @@
         }
         
      }
-
         
     }
+}
+
+//clients
+.client {
+    @include centerContent;
+    flex-direction: column;
+    padding-bottom: 9rem;
+  p {
+      @include subHeader;
+  }
+  h2 {
+      @include headerContent;
+      padding-bottom: 3rem;
+      font-size: 4rem;
+      line-height: 4.5rem;
+  }
+  &s {
+      padding: 2rem 6rem;
+      display: flex;
+      flex-direction: row;
+      background: url("../../assets/illustrations/Shadow.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      gap: 3rem;
+
+     &__detail {
+         padding: 2rem;
+         background-color: white;
+         border: 1px solid #DBEAFE;
+         box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
+         border-radius: 2.5rem;
+         width: 35rem;
+       span {
+           font-size: 1.5rem;
+       }
+       p {
+           @include paragraphthin;
+           padding-top: 4rem;
+       }
+       .clients_p {
+           display: flex;
+            flex-direction: row;
+            padding-top: 2rem;
+          img {
+              width : 5rem;
+              height: 5rem;
+          }
+           .c-p{
+             display: flex;
+             flex-direction: column;
+             padding: 2rem 2rem;
+             h2 {
+                 font-size: 1.7rem;
+                 line-height: 0;
+                 letter-spacing: -0.08rem;
+                 padding: 0rem;
+             }
+             p {
+                 padding-top: 1rem;
+                 font-size: 1.4rem;
+                 width: 100%;
+             }
+           }
+       }
+     }
+      
+  }
 }
