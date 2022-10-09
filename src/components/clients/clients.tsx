@@ -39,8 +39,11 @@ const Clients = () => {
                      <p>{detail?.comments}</p>
                      <div className="clients_p">
                       <img src={detail?.img} alt="clients " />
-                      <h2> {detail?.name}</h2>
-                      <p>{detail?.title}</p>
+                       <div className="c-p"> 
+                         <h2> {detail?.name}</h2>
+                         <p>{detail?.title}</p>
+                        </div>
+                   
                       </div>
                  </div>
               ))
