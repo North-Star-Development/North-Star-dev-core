@@ -38,6 +38,9 @@ body {
 //   background: #2851E3;
   background-size: 400% 400%;
 
+  input {border:0;outline:0;}
+  input:focus {outline:none!important;}
+
 }
 .App {
     overflow-x: hidden;

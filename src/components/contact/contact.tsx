@@ -15,10 +15,11 @@ const Contacts = () => {
           <img src={mail} alt="mail" />
         </div>
         <div className="contacts__2">
-          <p>Send us a message</p>
+          <div className="-c2">
+             <p>Send us a message</p>
            <form>
-             <input type="text" placeholder="What is your Name"/>
-             <input type="text" placeholder="What is your email address"/>
+             <input type="text" placeholder="What is your Name?"/>
+             <input type="text" placeholder="What is your email address?" />
              <PhoneInput
                 country={'us'}
                 // value={this.state.phone}
@@ -27,7 +28,9 @@ const Contacts = () => {
                <input className="messages" type="text" placeholder="Write your message"/>
                <Button primary={true} text="Send Message" />
            </form>
-        </div>
+        </div>  
+          </div>
+         
      </div>
     );
 }
