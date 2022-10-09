@@ -1,11 +1,26 @@
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules
 import React from "react";
 
+// dynamically gettting images of clients
 const eachClientImg = (client : number) => {
     return require(`../../assets/png/Oval${client}.png`)
 }
+//client details types
+interface clientDetailsTypes {
+    comments :string,
+    img: any,
+    name : string,
+    title : string,
+}
 
+//JSX Component
 const Clients = () => {
-    const clientsDetails = [
+
+    // Array of objects Lists
+    const clientsDetails:Array<clientDetailsTypes> = [
         {
             comments : "“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”",
             img : eachClientImg(1),

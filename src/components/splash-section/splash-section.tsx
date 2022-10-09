@@ -1,8 +1,16 @@
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules
 import React from "react";
+
+//importing Component
 import Button from "../button/button";
 
+// importing png or logo
 const splashImg = require('../../assets/png/splash-img.png');
-//resoure
+
+// JSX Component
 const SplashSection = () => {
    return (
      <section className="splash">

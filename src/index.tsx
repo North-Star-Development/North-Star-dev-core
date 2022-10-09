@@ -1,3 +1,7 @@
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/global.scss';

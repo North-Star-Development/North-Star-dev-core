@@ -1,18 +1,28 @@
-/// offer
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules and component
 import React from "react";
 import Button from "../button/button";
+
+// importing illustrations from assets
 const dev = require('../../assets/illustrations/dev.png');
 const ux = require('../../assets/illustrations/ux.png');
 const brand = require('../../assets/illustrations/brand.png');
 const motion = require('../../assets/illustrations/motion.png');
 
+
+// types
 interface listsObjectTypes {
     header: string,
     paragraph: string,
     imgUrl : string
 }
 
+// JSX Component
 const OfferList = () => {
+
+    // Array of Objects
     const lists: Array<listsObjectTypes>= [
         {
             header: "UI/UX Design",

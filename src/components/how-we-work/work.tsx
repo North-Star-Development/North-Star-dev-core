@@ -1,13 +1,23 @@
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules
 import React from "react";
 
+// importing image
 const workCard = require("../../assets/png/work.png");
 
+// types
 interface ListObjectTypes {
     slug : string,
     slug_header : string,
     slug_paragraph : string
 }
+
+// JSX Component
 const HowWeWork = () => {
+
+    // array of of object list
     const workList:Array<ListObjectTypes> = [
         {
             slug: "01",

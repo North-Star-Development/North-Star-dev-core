@@ -1,7 +1,18 @@
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules
 import React from "react";
 
+// types
+interface achievementsTypes {
+    number : number,
+    slug : string
+}
+
+// Array of object in a list
 const Achievements = () => {
-   const achievementsDetails:Array<any> = [
+   const achievementsDetails:Array<achievementsTypes> = [
        {
            number : 483,
            slug : "Satisfied global clients"

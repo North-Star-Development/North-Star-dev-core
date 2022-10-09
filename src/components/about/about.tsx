@@ -1,8 +1,14 @@
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules
 import React from "react";
 import Button from "../button/button";
+
+//illustration image
 const aboutImg = require('../../assets/png/about.png');
 
-
+//JSX Component
 const About = () => {
     return (
       <div className="about">
