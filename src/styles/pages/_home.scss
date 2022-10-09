@@ -415,14 +415,23 @@
          width: 26rem;
          justify-content: center;
          align-items: center;
-         border-radius: 1.5rem;
-         border-top: 1px solid #E4E4E7;
-         box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
-        .img {
+        
+        .img_o {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            width: 26rem;
+            border-radius: 1.5rem 1.5rem 0rem 0rem;
+            border-top: 1px solid #E4E4E7;
+            box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
+          .img {
             padding: 2rem 0rem;
             display: flex;
             width: 18rem;
-        } 
+        }  
+        }
+  
     
         .members {
             display: flex;
@@ -432,7 +441,7 @@
             text-align: center;
             width: 100%;
             background: #fff;
-            border-radius: 1rem;
+            border-radius: 0rem 0rem 1.5rem 1.5rem;
             box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
             // margin-bottom: -2rem;
             .img_ {
