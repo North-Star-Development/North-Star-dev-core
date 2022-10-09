@@ -41,7 +41,7 @@ const OfferList = () => {
           <h2> Here are a list of services we offer</h2>
           <div className="offer__list">
               {lists.map((list, id) => (
-                  <div className="offer__list_">
+                  <div className="offer__list_" key={id}>
                       <div className="offer__list_detail">
                         <h2 className="-head">{list?.header}</h2>
                         <p className="-t">{list?.paragraph}</p>
