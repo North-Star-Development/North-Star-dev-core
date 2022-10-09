@@ -380,4 +380,9 @@
     @include centerContent;
     flex-direction: column;
     padding-bottom: 9rem;
+    &s{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        
+    }
 }

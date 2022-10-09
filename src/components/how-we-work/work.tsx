@@ -43,8 +43,8 @@ const HowWeWork = () => {
        </div>
        <div className="work__detail">
            {
-             workList.map((list) => (
-                <div className="work__detail__list">
+             workList.map((list, i) => (
+                <div className="work__detail__list" key={i}>
                    <p className="p__list">{list?.slug}</p>
                    <h2>{list?.slug_header}</h2>
                    <p className="p2__list">{list?.slug_paragraph}</p>
