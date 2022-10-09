@@ -27,7 +27,7 @@ const Achievements = () => {
          <div className="achievements_">
           {
               achievementsDetails.map((detail, i) => (
-               <div className="achievements__detail">
+               <div className="achievements__detail" key={i}>
                     <h2 className="-h2">
                         {detail?.number === 100 
                           ? `${detail?.number}%` 
