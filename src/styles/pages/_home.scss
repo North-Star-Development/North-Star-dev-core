@@ -613,7 +613,20 @@
         .messages {
             padding: 0.6rem 0rem 6rem 0rem;
         }
-       
+        .react-tel-input .flag-dropdown {
+            background-color: white !important;
+            border-bottom: solid 1px #D4D4D8 !important;
+            border-top: unset !important;
+            border-left: unset !important;
+            border-right: unset !important;
+        }
+        .react-tel-input .form-control {
+            border-radius: unset !important;
+            border-top: unset !important;
+            border-left: unset !important;
+            border-right: unset !important;
+            border-bottom: solid 1px #D4D4D8 !important;
+        }  
 
        } 
     }
