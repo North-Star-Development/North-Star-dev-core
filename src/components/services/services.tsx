@@ -1,7 +1,14 @@
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules
 import React from 'react';
+
+// importing images
 const icon = require('../../assets/png/Icon.png');
 const service = require('../../assets/png/services.png');
 
+// JSX Components
 const Services = () => {
     const services:String[] = ['ReactJs', 'Typescript', "Figma & XD", "NodeJs", "Python", "GoLang", "Solidity", "AWS, and more"]
     return (

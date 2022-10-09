@@ -1,14 +1,20 @@
-@mixin centerContent {
+  // Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// center content
+  @mixin centerContent {
     display: flex;
     align-items: center;
   }
 
+  // for header
   @mixin headerContent {
     font-size: 4.5rem;
     line-height: 59px;
     letter-spacing: -2px;
   }
 
+  // for sub header
   @mixin subHeader {
     color: #2563EB;
     font-style: normal;
@@ -17,6 +23,7 @@
     line-height: 20px;
   }
 
+  // smaller paragraph
   @mixin paragraphthin {
     font-size: 1.6rem;
     font-weight: 500;

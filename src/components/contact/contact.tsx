@@ -1,9 +1,16 @@
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules and component
 import React from "react";
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import Button from "../button/button";
+
+// importing images
 const mail = require('../../assets/png/mail.png');
 
+// JSX Component
 const Contacts = () => {
 
     return (

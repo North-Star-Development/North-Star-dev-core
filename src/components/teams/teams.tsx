@@ -1,13 +1,19 @@
+// Copyright NorthStar Development 🕵🏻‍♂️ 2022 
+// 17 U.S.C §§ 101-1511
+
+// import relevant modules
 import React from "react";
 
-
+// dynamically importing member images
 const eachMemberImg = (member : number) => {
     return require(`../../assets/illustrations/Memoji${member}.png`);
 }
+// dynamically importing member images
 const eachMemberSide = (eachmember : number) => {
   return require(`../../assets/illustrations/member${eachmember}.png`)
 }
 
+// types
 interface teamMemojisTypes {
     bg : string,
     img: any,
@@ -17,7 +23,10 @@ interface teamMemojisTypes {
     alt : string
 }
 
+// JSX Component
 const Teams = () => {
+
+ // Array of Objects Lists
     const teamMemojis:Array<teamMemojisTypes> = [
         {
           bg : "#C3F7B6",
@@ -63,7 +72,7 @@ const Teams = () => {
              <div className="teams__member" 
                  key={i}
                   >
-                   <div className="img_o"           
+                   <div className="img_o"            
                       style={{
                       background:member?.bg         
                     }}>
