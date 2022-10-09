@@ -7,6 +7,7 @@
   margin-bottom: 4rem;
   width: 100%;
   background: #2851E3;
+  background-attachment: fixed;
 
   &__section1{
       width: 50%;
@@ -61,6 +62,7 @@
     background: #fff;
     flex-direction: row;
     padding-bottom: 9rem;
+    background-attachment: fixed;
 
     gap: 12rem;
   &__img{
@@ -109,6 +111,7 @@
     flex-direction: row;
     background: #ffff;
     padding-bottom: 9rem;
+    background-attachment: fixed;
 
     &__1 {
         padding: 0rem 0rem 0rem 10rem;
@@ -171,6 +174,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 9rem;
+    background-attachment: fixed;
  
    p {
         @include subHeader;
@@ -237,6 +241,7 @@
     @include centerContent;
     flex-direction: column;
     padding-bottom: 9rem;
+    background-attachment: fixed;
     p{
         @include subHeader;
     }
@@ -293,6 +298,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 9rem;
+    background-attachment: fixed;
     &__ {
         width: 100%;
         display: flex;
@@ -376,13 +382,80 @@
 
 //teams
 .team {
-    background-color: white;
     @include centerContent;
     flex-direction: column;
+    background: url('../../assets/illustrations/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     padding-bottom: 9rem;
+    p {
+        @include subHeader;
+        margin-bottom: 1rem;
+        
+    }
+    h2 {
+        @include headerContent;
+        padding-bottom: 3rem;
+        font-size: 4rem;
+        line-height: 4.5rem;
+
+    }
+    .subh{
+        padding-bottom: 5rem;
+        margin-top: -3rem;
+    }
     &s{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
+        gap: 2rem;
+     &__member {
+         display: flex;
+         flex-direction: column;
+         width: 26rem;
+         justify-content: center;
+         align-items: center;
+         border-radius: 1.5rem;
+         border-top: 1px solid #E4E4E7;
+         box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
+        .img {
+            padding: 2rem 0rem;
+            display: flex;
+            width: 18rem;
+        } 
+    
+        .members {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
+            // margin-bottom: -2rem;
+            .img_ {
+                width: 100%;
+                margin-top: -0.5rem;
+               
+            }
+            h2 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.7rem;
+                letter-spacing: 0rem;;
+                line-height: 4rem;
+                padding-bottom: 0rem;
+            }
+            p {
+                @include paragraphthin;
+                font-size: 1.5rem;
+            }
+        }
+        
+     }
+
         
     }
 }

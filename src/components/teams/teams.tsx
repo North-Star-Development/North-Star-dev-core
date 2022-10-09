@@ -53,7 +53,8 @@ const Teams = () => {
     return (
       <div className="team">
          <p>Baddasses you can back on</p> 
-         <h2>Global Professional Creative Team Members</h2>
+         <h2>Global Professional Creative</h2>
+         <h2 className="subh"> Team Members</h2>
          <div className="teams">
          {
            teamMemojis.map((member, i) => (
@@ -63,10 +64,17 @@ const Teams = () => {
                       background: member?.bg
                   }}
                   >
-                    <img src={member?.img} alt={member?.alt} />
-                    <img src={member?.imgSide} alt={member?.alt} />
-                    <h2>{member?.name}</h2>
-                    <p>{member?.title}</p>   
+                    <img className="img" src={member?.img} alt={member?.alt} />
+                    
+                    <div className="members">
+                     <img 
+                        className="img_"
+                        src={member?.imgSide}
+                         alt={member?.alt} />
+                      <h2>{member?.name}</h2>
+                      <p>{member?.title}</p>  
+                    </div>
+                    
                  </div>
              ) )
          }
