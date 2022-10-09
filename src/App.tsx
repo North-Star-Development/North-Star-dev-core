@@ -9,6 +9,7 @@ import OfferList from "./components/offer/offer";
 import HowWeWork from "./components/how-we-work/work";
 import Teams from "./components/teams/teams";
 import Clients from "./components/clients/clients";
+import Contacts from "./components/contact/contact";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
       <HowWeWork/>
       <Teams />
       <Clients />
+      <Contacts />
     </div>
   );
 }
