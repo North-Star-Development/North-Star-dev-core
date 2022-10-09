@@ -1,8 +1,14 @@
 import React from "react";
 
-const workCard = require("../../assets/png/work.png")
+const workCard = require("../../assets/png/work.png");
+
+interface ListObjectTypes {
+    slug : string,
+    slug_header : string,
+    slug_paragraph : string
+}
 const HowWeWork = () => {
-    const workList = [
+    const workList:Array<ListObjectTypes> = [
         {
             slug: "01",
             slug_header : "We Research",
