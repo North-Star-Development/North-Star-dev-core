@@ -158,9 +158,7 @@
             
           }
         }
-
      }
-
     }  
     &__2 {
         width: 50rem;
@@ -285,14 +283,11 @@
        img {
            height: 6rem;
        }
-    
      }
    }
-
    Button {
        padding: 1rem 3.5rem;
    }
-
 }
 
 // how we work
@@ -338,7 +333,6 @@
              overflow-wrap: break-word;
              padding: 3rem 0rem 0rem 16.2rem;
          }
-  
        }
        img {
            width: 50%
@@ -350,7 +344,6 @@
 
      &__list{
          border-top:2px dashed #E2E8F0; 
-       
          .p__list {
            width: 5rem;
            height: 5rem;
@@ -380,7 +373,6 @@
          border-top: unset;
      }
     }
-
 }
 
 //teams
@@ -434,7 +426,6 @@
             width: 18rem;
         }  
         }
-  
     
         .members {
             display: flex;
@@ -464,9 +455,7 @@
                 font-size: 1.5rem;
             }
         }
-        
-     }
-        
+     } 
     }
 }
 
@@ -533,7 +522,6 @@
            }
        }
      }
-      
   }
 }
 
@@ -548,8 +536,7 @@
        flex-direction: column;
        padding-left: 15rem;
    p {
-       @include subHeader;
-       
+       @include subHeader;  
    }
    h2 {
     @include headerContent;
@@ -580,7 +567,6 @@
         background: #FFFFFF;
         border: 1px solid #DBEAFE;
         box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
-        // border-radius: 20px;
         border-radius: 1.2rem;
         padding: 4rem 6rem 4rem 6rem;
 
@@ -595,7 +581,6 @@
  
 
         input {
-            // padding: 2rem 0rem;
             @include paragraphthin;
             padding: 0.6rem 0rem;
             margin: 2rem 0rem;
