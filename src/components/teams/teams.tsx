@@ -36,20 +36,20 @@ const Teams = () => {
             alt: "member 2 emojis"
        },
        {
-        bg : "#FFDFB0",
-        img: eachMemberImg(3),
-        imgSide : eachMemberSide(3),
-        name : "Devcenter Lore",
-        title: "Software Engineer",
-        alt: "member 3 emojis"
+            bg : "#FFDFB0",
+            img: eachMemberImg(3),
+            imgSide : eachMemberSide(3),
+            name : "Devcenter Lore",
+            title: "Software Engineer",
+            alt: "member 3 emojis"
       },
       {
-        bg : "#FFC0DE",
-        img: eachMemberImg(4),
-        imgSide : eachMemberSide(4),
-        name : "Degarden Pous",
-        title: "Software Engineer",
-        alt: "member 3 emojis"
+            bg : "#FFC0DE",
+            img: eachMemberImg(4),
+            imgSide : eachMemberSide(4),
+            name : "Degarden Pous",
+            title: "Software Engineer",
+            alt: "member 3 emojis"
       } 
     ]
     return (
@@ -65,10 +65,8 @@ const Teams = () => {
                   >
                    <div className="img_o"           
                       style={{
-                      background:member?.bg
-                
+                      background:member?.bg         
                     }}>
-
                     <img className="img" src={member?.img} alt={member?.alt} />
                     </div>
                     <div className="members">
