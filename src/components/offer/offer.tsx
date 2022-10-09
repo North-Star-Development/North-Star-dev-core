@@ -6,8 +6,14 @@ const ux = require('../../assets/illustrations/ux.png');
 const brand = require('../../assets/illustrations/brand.png');
 const motion = require('../../assets/illustrations/motion.png');
 
+interface listsObjectTypes {
+    header: string,
+    paragraph: string,
+    imgUrl : string
+}
+
 const OfferList = () => {
-    const lists: Array<any>= [
+    const lists: Array<listsObjectTypes>= [
         {
             header: "UI/UX Design",
             paragraph : "Our designers are experienced professionals who know how to deliver high-quality work at lightning speed. We'll get started on your project within minutes of hiring us and have it done in just 24 hours!",
