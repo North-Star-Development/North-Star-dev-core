@@ -1,7 +1,7 @@
 import React from "react";
 
 const eachClientImg = (client : number) => {
-    return require(`../../assets/png/Oval${client}`)
+    return require(`../../assets/png/Oval${client}.png`)
 }
 
 const Clients = () => {
@@ -29,8 +29,22 @@ const Clients = () => {
        <div className="client">
         <p>Several reports say we are excellent</p>
         <h2>Our happy clients say about us</h2>
-         <div className="clients">
+         <div className="clients">	
 
+          
+            {
+              clientsDetails.map((detail, id) => (
+                 <div className="clients__detail" key={id}>
+                     <span>&#11088;&#11088;&#11088;&#11088;&#11088;</span>
+                     <p>{detail?.comments}</p>
+                     <div className="clients_p">
+                      <img src={detail?.img} alt="clients " />
+                      <h2> {detail?.name}</h2>
+                      <p>{detail?.title}</p>
+                      </div>
+                 </div>
+              ))
+            }
          </div>
        </div>
     );

@@ -8,6 +8,7 @@ import Achievements from "./components/achievements/achievements";
 import OfferList from "./components/offer/offer";
 import HowWeWork from "./components/how-we-work/work";
 import Teams from "./components/teams/teams";
+import Clients from "./components/clients/clients";
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
       <OfferList />
       <HowWeWork/>
       <Teams />
+      <Clients />
     </div>
   );
 }
