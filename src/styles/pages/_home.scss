@@ -532,13 +532,15 @@
 // contacts;
 .contact {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     padding: 5rem 3rem 9rem 3rem;
+    background: #F8FAFC;
 
    &s__1 {
        display: flex;
        flex-direction: column;
        padding-left: 15rem;
+       width: 50vw;
    p {
        @include subHeader;  
    }
@@ -563,6 +565,7 @@
      
    } 
    &s__2 {
+       width: 40vw;
        margin-top: 6rem;
 
      .-c2{
@@ -572,7 +575,7 @@
         border: 1px solid #DBEAFE;
         box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
         border-radius: 1.2rem;
-        padding: 4rem 6rem 4rem 6rem;
+        padding: 4rem 10rem 4rem 10rem;
 
           p {
             font-weight: 600;
@@ -587,6 +590,7 @@
         input {
             @include paragraphthin;
             padding: 0.6rem 0rem;
+            width: 100%;
             margin: 2rem 0rem;
             border-bottom: solid 1px #D4D4D8;
         }
@@ -632,6 +636,39 @@
     padding-bottom: 3rem;
     flex-direction: column;
    &s{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background: #F8FAFC;
+    padding: 3rem;
+
+    img {
+        padding-top: 1rem;
+        width: 15rem;
+    }
+    &__{
+        display: flex;
+        gap: 2rem;
+        margin-top: 1.5rem;
+
+        h3{
+            margin-top: -0.35rem;
+            color: #52525B;
+
+          }
+          p {
+              @include paragraphthin;
+          }
+    }
+   }
+   .foot {
+       padding: 3rem 0rem;
+       @include centerContent;
+       align-items: center;
+       text-align: center;
+       justify-content: center ;
+       @include paragraphthin;
+       color: #52525B;
+
    }
 }
