@@ -168,13 +168,13 @@
 
 
 //achievements
-
 .achievements{
   @include centerContent;
-    background: #fff;
+    background: #F8FAFC;
     display: flex;
     flex-direction: column;
     padding-bottom: 9rem;
+    padding-top: 4rem ;
     background-attachment: fixed;
  
    p {
@@ -239,6 +239,7 @@
 //offer lists
 .offer {
     background-color: white;
+    padding-top: 4rem ;
     @include centerContent;
     flex-direction: column;
     padding-bottom: 9rem;
@@ -300,7 +301,7 @@
     &__ {
         width: 100%;
         display: flex;
-        height: 36rem;
+        height: 42rem;
         padding-bottom: 6rem;
        &card {
            width: 50%;
@@ -384,6 +385,7 @@
     background-position: center;
     background-attachment: fixed;
     padding-bottom: 9rem;
+    padding-top: 4rem;
     p {
         @include subHeader;
         margin-bottom: 1rem;
@@ -464,6 +466,8 @@
     @include centerContent;
     flex-direction: column;
     padding-bottom: 9rem;
+    padding-top: 4rem;
+    background: #F8FAFC;
   p {
       @include subHeader;
   }
@@ -529,7 +533,7 @@
 .contact {
     display: flex;
     gap: 2rem;
-    padding: 2rem 3rem 9rem 3rem;
+    padding: 5rem 3rem 9rem 3rem;
 
    &s__1 {
        display: flex;
@@ -619,5 +623,15 @@
        } 
     }
     
+   }
+}
+
+//footer
+.footer {
+    display: flex;
+    padding-bottom: 3rem;
+    flex-direction: column;
+   &s{
+    background: #F8FAFC;
    }
 }

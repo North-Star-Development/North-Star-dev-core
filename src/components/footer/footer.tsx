@@ -5,7 +5,7 @@
 import React from "react";
 
 // importing north star image
-const northstarImg = require('../../assets/illustrations/northstar__sec.png');
+const northstarImg = require('../../assets/illustrations/northstar_sec.png');
 
 //JSX Component
 const Footer = () => {
