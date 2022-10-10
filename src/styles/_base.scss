@@ -35,13 +35,20 @@ html {
 }
 
 body {
-//   font-family: $font-primary, sans-serif;
+  font-family: $font-primary, sans-serif;
   font-size: 1.6rem;
   overflow-x: hidden;
 //   background: #2851E3;
   background-size: 400% 400%;
-
-  input {border:0;outline:0;}
+  h2 {
+    font-family: $font-secondary, sans-serif;
+    opacity: 0.8;
+ } 
+  input {
+    border:0;
+    outline:0;
+    font-family: $font-primary, sans-serif;
+  }
   input:focus {outline:none!important;}
 
 }

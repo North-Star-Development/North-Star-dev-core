@@ -24,9 +24,8 @@
       line-height: 0.5rem
   }
   h2{
-      font-family: 'Gilroy';
       display: flex;
-      font-size: 7.5rem;
+      font-size: 6.5rem;
       line-height: 8rem;
       font-style: normal;
       font-weight: 700;
@@ -671,4 +670,8 @@
        color: #52525B;
 
    }
+}
+
+Button {
+      font-family: $font-primary, sans-serif;;
 }
