@@ -13,6 +13,7 @@ import HowWeWork from "./components/how-we-work/work";
 import Teams from "./components/teams/teams";
 import Clients from "./components/clients/clients";
 import Contacts from "./components/contact/contact";
+import Footer from "./components/footer/footer";
 
 // JSX Root/Home Component
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Teams />
       <Clients />
       <Contacts />
+      <Footer />
     </div>
   );
 }
