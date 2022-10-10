@@ -21,7 +21,7 @@ const Footer = () => {
                  <p> Twitter</p>
              </div>
           </div>
-          <p>©2022, Northstar LLC</p>
+          <p className="foot">©2022, Northstar LLC</p>
       </div>
     );
 
