@@ -35,6 +35,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: $font-primary, sans-serif;
   font-size: 1.6rem;
   overflow-x: hidden;
@@ -49,9 +50,17 @@ body {
     outline:0;
     font-family: $font-primary, sans-serif;
   }
-  input:focus {outline:none!important;}
+  input:focus {
+    outline:none!important;
+  }
+  a {
+    text-decoration: none;
+  }
 
 }
 .App {
     overflow-x: hidden;
 }
+ 
+
+  
