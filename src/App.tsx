@@ -1,6 +1,8 @@
 // Copyright NorthStar Development 🕵🏻‍♂️ 2022 
 // 17 U.S.C §§ 101-1511
 
+
+
 //components
 import Navbar from "./components/navbar/navbar";
 import SplashSection from "./components/splash-section/splash-section";
@@ -14,11 +16,25 @@ import Teams from "./components/teams/teams";
 import Clients from "./components/clients/clients";
 import Contacts from "./components/contact/contact";
 import Footer from "./components/footer/footer";
+import { useEffect, useRef } from 'react';
+
+//importing relevant modules
+const locomotiveScroll =
+  typeof window !== `undefined` ? require("locomotive-scroll").default : null;
+
 
 // JSX Root/Home Component
 function App() {
+  const refScroll = useRef(null);
+  
+  useEffect(() => {
+    // locomotiveScroll.destroy();
+
+  
+    
+  }, [])
   return (
-    <div className="App">
+    <div className="App" data-scroll-container ref={refScroll}>
       <Navbar />
       <SplashSection />
       <SplashBottom />
