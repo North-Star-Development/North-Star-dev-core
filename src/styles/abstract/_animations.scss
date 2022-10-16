@@ -2,3 +2,21 @@
 // 17 U.S.C §§ 101-1511
 
 // for animations
+
+@keyframes rotation {
+    from {
+        transform : rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes slideup {
+    from {
+        transfrom : translateY(0);
+    }
+    to {
+        transform : translatey(-100%);
+    }
+}

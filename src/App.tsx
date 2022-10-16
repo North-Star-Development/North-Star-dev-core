@@ -17,6 +17,7 @@ import Clients from "./components/clients/clients";
 import Contacts from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import { useEffect, useRef } from 'react';
+import Preloader from "./components/preloader/preloader";
 
 //importing relevant modules
 const locomotiveScroll =
@@ -35,6 +36,7 @@ function App() {
   }, [])
   return (
     <div className="App" data-scroll-container ref={refScroll}>
+      <Preloader/>
       <Navbar />
       <SplashSection />
       <SplashBottom />
