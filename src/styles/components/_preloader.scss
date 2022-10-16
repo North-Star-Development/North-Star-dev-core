@@ -63,4 +63,13 @@
    &s__4 {
        animation : slideup 0.5s linear 1s both;
    }
+   .text {
+    display: inline-block;
+     font-size: 5rem;
+    overflow: hidden;
+    white-space: nowrap;
+  animation: example 2s linear 0s  alternate;
+
+
+   }
 }

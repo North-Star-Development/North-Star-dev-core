@@ -5,17 +5,20 @@ const Preloader = () => {
 
     const [loading, setLoading]: any= useState(false)
     const [img, setimg]:any = useState(false);
-
+    const [onload, setonload] = useState(false);
     const imgRef = useRef(null);
     const slideUpAnimate = () => {
     
         setTimeout(() => {
             setLoading(true);
-        }, 1000)
+        }, 2000)
 
         setTimeout(() => {
             setimg(true)
-        }, 2000)
+        }, 2600)
+        setTimeout(() => {
+            setonload(true)
+        }, 150);
         
     }
     useEffect(() => {
@@ -35,9 +38,14 @@ const Preloader = () => {
             <img src={preloaderImg} alt="preloader" style={{
                 display : img && "none"
             }} />  
-            <h1 style={{
+           <div className="text" style={{
                 display : img && "none"
-            }} > Northstar</h1>
+            }}>
+          {onload && 'Northstar ⭐️'} 
+           </div>
+            {/* <h1 style={{
+                display : img && "none"
+            }} ></h1> */}
            </div>  
          
          </div>
