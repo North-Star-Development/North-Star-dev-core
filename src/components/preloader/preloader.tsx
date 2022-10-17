@@ -6,7 +6,7 @@ const Preloader = () => {
     const [loading, setLoading]: any= useState(false)
     const [img, setimg]:any = useState(false);
     const [onload, setonload] = useState(false);
-    const imgRef = useRef(null);
+    const [hidden, setHidden]:any = useState(false)
     const slideUpAnimate = () => {
     
         setTimeout(() => {
@@ -14,19 +14,24 @@ const Preloader = () => {
         }, 2000)
 
         setTimeout(() => {
-            setimg(true)
+            setimg(true);
         }, 2600)
         setTimeout(() => {
-            setonload(true)
+            setonload(true);
         }, 150);
         
+        setTimeout(() => {
+            setHidden(true);
+        }, 5000)
     }
     useEffect(() => {
             slideUpAnimate()
-        
     }, [])
+    
     return (
-       <div className="preloader" >
+       <div className="preloader" style={{
+           display: hidden && "none"
+       }} >
          <div className={`preloader__overlay ${loading && "overlay"} `}>
              <ul>
                 <li className={`preloader__1 ${loading && "preloaders__1"}`}></li>
