@@ -2,7 +2,11 @@
 // 17 U.S.C §§ 101-1511
 
 // import relevant modules
-import React from "react";
+import React, { useEffect } from "react";
+
+//import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // importing image
 const workCard = require("../../assets/png/work.png");
@@ -40,24 +44,28 @@ const HowWeWork = () => {
             slug_paragraph: "After the build, we test extensively to ensure that every single feature works as expected then hand over your product with a smile on our faces."
         }
     ]
+
+    useEffect(() => {
+      AOS.init()
+    }, [])
     return (
      <div className="work">
-       <div className="work__">
+       <div className="work__" data-aos-duration="1000" data-aos="fade-in">
          <div className="work__card">
-             <p className="-we">Here's how we work</p>
-             <h2>How we work</h2>
-             <p className="-w" >Clarity gives you the blocks & components you need to create a truly professional website.</p>
+             <p className="-we" data-aos-duration="1000" data-aos="fade-in" data-aos-delay="100">Here's how we work</p>
+             <h2 data-aos-duration="1000" data-aos="fade-in" data-aos-delay="120">How we work</h2>
+             <p className="-w" data-aos-duration="1000" data-aos="fade-in" data-aos-delay="140">Clarity gives you the blocks & components you need to create a truly professional website.</p>
          </div>
          <img src={workCard} alt="work card" />
 
        </div>
-       <div className="work__detail">
+       <div className="work__detail" data-aos-duration="1000" data-aos="fade-in" data-aos-delay="100">
            {
              workList.map((list, i) => (
                 <div className="work__detail__list" key={i}>
                    <p className="p__list">{list?.slug}</p>
                    <h2>{list?.slug_header}</h2>
-                   <p className="p2__list">{list?.slug_paragraph}</p>
+                   <p className="p2__list" data-aos-duration="1000" data-aos="fade-in" data-aos-delay="300">{list?.slug_paragraph}</p>
                  </div>
              ))
            }
