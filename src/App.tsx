@@ -16,21 +16,19 @@ import Teams from "./components/teams/teams";
 import Clients from "./components/clients/clients";
 import Contacts from "./components/contact/contact";
 import Footer from "./components/footer/footer";
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Preloader from "./components/preloader/preloader";
 
 //importing relevant modules
-const locomotiveScroll =
-  typeof window !== `undefined` ? require("locomotive-scroll").default : null;
-
 
 // JSX Root/Home Component
 function App() {
   const refScroll = useRef(null);
+  const [load, setLoad] = useState(false);
   
   useEffect(() => {
     // locomotiveScroll.destroy();
-
+     
   
     
   }, [])
