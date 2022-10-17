@@ -25,12 +25,29 @@
   }
   h2{
       opacity: 1;
-      display: flex;
+    //   display: flex;
       font-size: 6.5rem;
       line-height: 8rem;
       font-style: normal;
       font-weight: 700;
       letter-spacing: -0.02em;
+    //   display: flex;
+      span {
+        background: linear-gradient(
+            -45deg,
+            var(--color-light-blue),
+            var(--color-light-purple),
+            var(--color-light-blue),
+            var(--color-light-purple)
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-size: 400% 400%;
+          animation: gradient 3s ease infinite;
+        //   display: flex;
+        //    margin-top: 3rem;
+      }
   }
   &-p{
       width: 80%;
