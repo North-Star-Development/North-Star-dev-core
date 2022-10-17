@@ -2,7 +2,11 @@
 // 17 U.S.C §§ 101-1511
 
 // import relevant modules
-import React from "react";
+import React, { useEffect } from "react";
+
+//import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // types
 interface achievementsTypes {
@@ -10,8 +14,10 @@ interface achievementsTypes {
     slug : string
 }
 
-// Array of object in a list
+//JSX Component
 const Achievements = () => {
+
+    // Array of object in a list
    const achievementsDetails:Array<achievementsTypes> = [
        {
            number : 483,
@@ -31,22 +37,26 @@ const Achievements = () => {
            slug : "Agency Awards"
        }
    ]
+
+ useEffect(() => {
+     AOS.init();
+ }, [])
     return(
      <div className="achievements">
-         <p>The numbers don't lie</p>
-         <h2> Our Achievements</h2>
-         <div className="achievements_">
+         <p data-aos-duration="1000" data-aos="fade-in">The numbers don't lie</p>
+         <h2 data-aos-duration="1000" data-aos="fade-in"> Our Achievements</h2>
+         <div className="achievements_" data-aos-delay="100" data-aos-duration="1000" data-aos="fade-zoom-in" >
           {
               achievementsDetails.map((detail, i) => (
                <div className="achievements__detail" key={i}>
-                    <h2 className="-h2">
+                    <h2 className="-h2" data-aos-delay="150" data-aos-duration="1000" data-aos="fade-in">
                         {detail?.number === 100 
                           ? `${detail?.number}%` 
                           : detail?.number === 12
                           ? `${detail?.number}+` 
                           : detail?.number }
                      </h2>
-                    <p className="-a">{detail?.slug}</p>
+                    <p className="-a" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-in">{detail?.slug}</p>
                 </div>
               ))
           }
