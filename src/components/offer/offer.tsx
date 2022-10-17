@@ -2,8 +2,12 @@
 // 17 U.S.C §§ 101-1511
 
 // import relevant modules and component
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../button/button";
+
+//import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // importing illustrations from assets
 const dev = require('../../assets/illustrations/dev.png');
@@ -45,22 +49,26 @@ const OfferList = () => {
             imgUrl : motion
         }
     ]
+
+    useEffect(() => {
+      AOS.init()
+    }, [])
     return (
       <div className="offer">
-          <p>Whaat we do</p>
-          <h2> Here are a list of services we offer</h2>
-          <div className="offer__list">
+          <p data-aos-duration="1000" data-aos="fade-in">Whaat we do</p>
+          <h2 data-aos-duration="1000" data-aos="fade-in"> Here are a list of services we offer</h2>
+          <div className="offer__list" data-aos-duration="1000" data-aos="fade-in">
               {lists.map((list, id) => (
                   <div className="offer__list_" key={id}>
                       <div className="offer__list_detail">
-                        <h2 className="-head">{list?.header}</h2>
-                        <p className="-t">{list?.paragraph}</p>
+                        <h2 className="-head" data-aos-duration="1000" data-aos-delay="100" data-aos="fade-in">{list?.header}</h2>
+                        <p className="-t" data-aos-duration="1000" data-aos-delay="100" data-aos="fade-in">{list?.paragraph}</p>
                       </div>
-                      <img src={list?.imgUrl} alt="illustrate" />
+                      <img src={list?.imgUrl} alt="illustrate" data-aos-duration="1000" data-aos-delay="100" data-aos="fade-zoom-in"/>
                   </div>
               ))}
           </div>
-          <Button text="Get Started" primary={true} />
+          <Button text="Get Started" primary={true} data-aos-duration="1000" data-aos="fade-up"/>
       </div>
     );
 }
