@@ -103,6 +103,17 @@ const Clients = () => {
               ))
             }
          </div>
+         <div className="slideshowDots">
+        {clientsDetails.map((_, idx) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
+        ))}
+      </div>
        </div>
     );
 }
