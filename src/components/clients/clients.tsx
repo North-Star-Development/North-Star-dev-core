@@ -4,6 +4,10 @@
 // import relevant modules
 import React, { useEffect, useRef, useState } from "react";
 
+//import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 // dynamically gettting images of clients
 const eachClientImg = (client : number) => {
     return require(`../../assets/png/Oval${client}.png`)
@@ -60,9 +64,8 @@ const Clients = () => {
         timeoutRef.current && clearTimeout(timeoutRef.current)
     }
     useEffect(() => {
+        AOS.init();
         resetTimeOut();
-        console.log(index)
-        console.log(clientsDetails.length, "length")
        timeoutRef.current = setTimeout(() => {
              setIndex((prevIndex) => 
               prevIndex === clientsDetails.length - 1 ? 0 : prevIndex + 1
@@ -75,13 +78,11 @@ const Clients = () => {
     }, [index])
     return (
        <div className="client">
-        <p>Several reports say we are excellent</p>
-        <h2>Our happy clients say about us</h2>
-         <div className="clients "  style={{
+        <p data-aos-duration="1000" data-aos="fade-in">Several reports say we are excellent</p>
+        <h2 data-aos-duration="1000" data-aos="fade-in">Our happy clients say about us</h2>
+         <div className="clients " data-aos-duration="1000" data-aos-delay="100" data-aos="fade-in" style={{
             marginLeft: "57rem",
-         }}>	
-
-          
+         }}>	    
             {
               clientsDetails.map((detail, id) => (
                  <div className="clients__detail" key={id} style={{
