@@ -34,7 +34,12 @@ html {
   }
 }
 
+// html {
+//   position: fixed;
+// }
+
 body {
+  // position: fixed;
   margin: 0;
   font-family: $font-primary, sans-serif;
   font-size: 1.6rem;
@@ -62,5 +67,6 @@ body {
     overflow-x: hidden;
 }
  
+
 
   

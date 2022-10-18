@@ -4,16 +4,23 @@
 // import relevant modules and button component
 import React from 'react';
 import Button from '../button/button';
+import { useWindowWidth } from '@react-hook/window-size';
+
+//import
 
 // importing image
 const northStarLogo = require('../../assets/png/northstar.png');
 
 //JSX Component
 const Navbar = () => {
+  const width = useWindowWidth();
     return (
       <nav className='nav'>
           <img alt='northstar logo' src={northStarLogo}/>
-          <div className='nav__content'>
+          {
+          width >= 850 ?
+          <>
+            <div className='nav__content'>
               <p><span>Home</span></p>
               <p><span> About</span></p>
               <p><span>Services</span></p>
@@ -21,8 +28,17 @@ const Navbar = () => {
               <p><span>Testimonials</span></p>
               <p><span>Team</span></p>
               <p><span>Contact Us</span></p>
-          </div>
+            </div>
             <Button primary={true} text='Get in Touch' />
+          </> : 
+
+            <div className="menu-bars" id="menu-bars">
+                  <div className="bar1"></div>
+                  {/* <div className="bar2"></div> */}
+                  <div className="bar3"></div>
+            </div>
+             
+          }
       </nav>
     );
 }
