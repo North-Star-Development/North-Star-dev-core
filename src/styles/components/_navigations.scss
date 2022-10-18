@@ -16,7 +16,7 @@
       height: 2.6rem;
       // margin-top: 1rem;
       @media screen and (max-width: 850px) {
-        margin-top: 1.5rem;
+        margin-top: 1.7rem;
       }
   }
   &__content {
@@ -47,40 +47,40 @@
 
   /* --- Menu Bars ------------------------------------ */
 
-.menu-bars {
-  position: fixed;
-  top: 1rem;
-  right: 2rem;
-  z-index: 10;
-  display: inline;
-  cursor: pointer;
-  background-color: #2851E3;
-  padding: 1rem;
-  border-radius: 1rem;
-}
+    .menu-bars {
+      position: fixed;
+      top: 1rem;
+      right: 2rem;
+      // z-index: 10;
+      display: inline;
+      cursor: pointer;
+      background-color: #2851E3;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
 
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 2px;
-  background-color: white;
-  margin: 8px 0;
-  transition: 0.4s;
-}
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 30px;
+      height: 2px;
+      background-color: white;
+      margin: 8px 0;
+      transition: 0.4s;
+    }
 
-/* Rotate first bar */
-.change .bar1 {
-  transform: rotate(-45deg) translate(-7px, 8px);
-}
+    /* Rotate first bar */
+    .change .bar1 {
+      transform: rotate(-45deg) translate(-2px, 8px);
+    }
 
-/* Fade out the second bar */
-.change .bar2 {
-  opacity: 0;
-}
+    /* Fade out the second bar */
+    .change .bar2 {
+      opacity: 0;
+    }
 
-/* Rotate last bar */
-.change .bar3 {
-  transform: rotate(45deg) translate(-6px, -8px);
-}
+    /* Rotate last bar */
+    .change .bar3 {
+      transform: rotate(45deg) translate(1px, -5px)
+    }
 }

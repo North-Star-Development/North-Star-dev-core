@@ -2,7 +2,7 @@
 // 17 U.S.C §§ 101-1511
 
 // import relevant modules and button component
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../button/button';
 import { useWindowWidth } from '@react-hook/window-size';
 
@@ -14,6 +14,8 @@ const northStarLogo = require('../../assets/png/northstar.png');
 //JSX Component
 const Navbar = () => {
   const width = useWindowWidth();
+  const [toggleMenu, setToggleMenu] = useState(false);
+
     return (
       <nav className='nav'>
           <img alt='northstar logo' src={northStarLogo}/>
@@ -32,8 +34,8 @@ const Navbar = () => {
             <Button primary={true} text='Get in Touch' />
           </> : 
 
-            <div className="menu-bars" id="menu-bars">
-                  <div className="bar1"></div>
+            <div className={`menu-bars ${toggleMenu && "change" }`} id="menu-bars" onClick={() => setToggleMenu(!toggleMenu)}>
+                  <div className="bar1"  ></div>
                   {/* <div className="bar2"></div> */}
                   <div className="bar3"></div>
             </div>
