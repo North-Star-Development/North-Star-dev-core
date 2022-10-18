@@ -500,8 +500,9 @@
       flex-direction: row;
       background: url("../../assets/illustrations/Shadow.png");
       background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
+      background-position: 25% 75%;
+    //   background-attachment: fixed;
+    //   position: fixed;
       gap: 3rem;
 
      &__detail {
@@ -544,7 +545,28 @@
            }
        }
      }
-  }
+   
+  }  
+   /* Buttons */
+        .slideshowDots {
+            text-align: center;
+        }
+        
+        .slideshowDot {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+        
+            cursor: pointer;
+            margin: 15px 7px 0px;
+        
+            background-color: #c4c4c4;
+        }
+        
+        .slideshowDot.active {
+            background-color: #C3F7B6;
+        }
 }
 
 // contacts;
