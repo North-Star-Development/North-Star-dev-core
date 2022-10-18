@@ -2,7 +2,11 @@
 // 17 U.S.C §§ 101-1511
 
 // import relevant modules
-import React from "react";
+import React, { useEffect } from "react";
+
+//import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // dynamically importing member images
 const eachMemberImg = (member : number) => {
@@ -61,17 +65,21 @@ const Teams = () => {
             alt: "member 3 emojis"
       } 
     ]
+
+    useEffect(() => {
+      AOS.init()
+    })
     return (
       <div className="team">
-         <p>Baddasses you can back on</p> 
-         <h2>Global Professional Creative</h2>
-         <h2 className="subh"> Team Members</h2>
+         <p data-aos="fade-in" data-aos-duration="1000">Baddasses you can back on</p> 
+         <h2 data-aos="fade-in" data-aos-duration="1000">Global Professional Creative</h2>
+         <h2 className="subh" data-aos="fade-in" data-aos-duration="1000"> Team Members</h2>
          <div className="teams">
          {
            teamMemojis.map((member, i) => (
              <div className="teams__member" 
                  key={i}
-                  >
+                 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" >
                    <div className="img_o"            
                       style={{
                       background:member?.bg         
