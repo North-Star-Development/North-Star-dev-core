@@ -2,7 +2,7 @@
 // 17 U.S.C §§ 101-1511
 
 // import relevant modules
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // dynamically gettting images of clients
 const eachClientImg = (client : number) => {
@@ -18,7 +18,7 @@ interface clientDetailsTypes {
 
 //JSX Component
 const Clients = () => {
-
+  
     // Array of objects Lists
     const clientsDetails:Array<clientDetailsTypes> = [
         {
@@ -38,18 +38,57 @@ const Clients = () => {
             img : eachClientImg(3),
             name: "Jenny Wilson",
             title: "Graphic Designer"
+        },
+        {
+            comments : "“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”",
+            img : eachClientImg(3),
+            name: "Jenny Wilson",
+            title: "Graphic Designer"
+        },
+        {
+            comments : "“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”",
+            img : eachClientImg(3),
+            name: "Jenny Wilson",
+            title: "Graphic Designer"
         }
     ]
+    const delay = 3000;
+    const [index, setIndex]:any = useState(0);
+    const timeoutRef:any = useRef(null);
+
+    const resetTimeOut = () => {
+        timeoutRef.current && clearTimeout(timeoutRef.current)
+    }
+    useEffect(() => {
+        resetTimeOut();
+        console.log(index)
+        console.log(clientsDetails.length, "length")
+       timeoutRef.current = setTimeout(() => {
+             setIndex((prevIndex) => 
+              prevIndex === clientsDetails.length - 1 ? 0 : prevIndex + 1
+             ) 
+       }, delay);
+       return () => {
+           resetTimeOut();
+       }
+     
+    }, [index])
     return (
        <div className="client">
         <p>Several reports say we are excellent</p>
         <h2>Our happy clients say about us</h2>
-         <div className="clients">	
+         <div className="clients "  style={{
+            marginLeft: "57rem",
+         }}>	
 
           
             {
               clientsDetails.map((detail, id) => (
-                 <div className="clients__detail" key={id}>
+                 <div className="clients__detail" key={id} style={{
+                    
+                    transition: "ease 1000ms",
+                    transform: `translate3d(${-index * 70}%, 0, 0)`
+              }}>
                      <span>&#11088;&#11088;&#11088;&#11088;&#11088;</span>
                      <p>{detail?.comments}</p>
                      <div className="clients_p">
