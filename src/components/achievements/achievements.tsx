@@ -20,7 +20,7 @@ const Achievements = () => {
     // Array of object in a list
    const achievementsDetails:Array<achievementsTypes> = [
        {
-           number : 483,
+           number : 53,
            slug : "Satisfied global clients"
        },
        {
@@ -28,12 +28,12 @@ const Achievements = () => {
            slug : "Customer return rate"
        },
        {
-           number : 854,
+           number : 23,
            slug : "Successfully finished projects",
 
        },
        {
-           number : 12,
+           number : 5,
            slug : "Agency Awards"
        }
    ]
@@ -52,7 +52,7 @@ const Achievements = () => {
                     <h2 className="-h2" data-aos-delay="150" data-aos-duration="1000" data-aos="fade-in">
                         {detail?.number === 100 
                           ? `${detail?.number}%` 
-                          : detail?.number === 12
+                          : detail?.number === 5
                           ? `${detail?.number}+` 
                           : detail?.number }
                      </h2>
