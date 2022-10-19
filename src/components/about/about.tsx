@@ -12,7 +12,8 @@ import 'aos/dist/aos.css';
 
 //illustration image
 const aboutImg = require('../../assets/png/black-people-computer.jpeg');
-
+const ss = require('../../assets/illustrations/sha.png');
+const ss2 = require('../../assets/illustrations/shape.png');
 
 //JSX Component
 const About = () => {
@@ -21,7 +22,9 @@ const About = () => {
   }, [])
     return (
       <div className="about">
+        <img className="alt" src={ss} alt="ss" data-aos="fade-in" data-aos-duration="2000"/>
         <img className="about__img" src={aboutImg} alt="about northstar" data-aos="fade-in" data-aos-duration="2000"/>
+        <img className="alt2" src={ss2} alt="ss" data-aos="fade-in" data-aos-duration="2000"/>
         <div className="about__contents"  data-aos="fade-up" data-aos-duration="2000">
           <p >About us</p>
           <h2>Your one stop shop for design and development</h2>

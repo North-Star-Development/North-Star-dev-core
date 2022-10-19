@@ -41,7 +41,6 @@
   }
   h2{
       opacity: 1;
-    //   display: flex;
       font-size: 6.5rem;
       line-height: 8rem;
       font-style: normal;
@@ -63,8 +62,6 @@
        line-height: 4rem;
        padding: 1rem 0rem 1rem 0rem;
     }
- 
-    //   display: flex;
       span {
         background: linear-gradient(
             -45deg,
@@ -128,6 +125,8 @@
   }
 }
 .ss {
+    
+    z-index: 1;
     position: absolute;
     left: -25px;
     right: 0px;
@@ -141,6 +140,7 @@
 
 }
 .ss2 {
+    z-index: 1;
     position: absolute;
     right: -15px;
     top: 68px;
@@ -153,6 +153,27 @@
         top: 300px;
     }
 }
+.alt {
+    width: 8rem !important;
+    height: 8rem !important;
+    position: absolute;
+    margin-left: 139px;
+    margin-top: 6px;
+    // right: -25px;
+    // top: 68px;
+    
+}
+.alt2 {
+    width: 8rem !important;
+    height: 8rem !important;
+    position: absolute;
+    margin-left: 139px;
+    margin-top: 6px;
+    // right: -25px;
+    // top: 68px;
+    
+}
+
 // about
 .about {
     display: flex;
@@ -160,13 +181,37 @@
     flex-direction: row;
     padding-bottom: 9rem;
     background-attachment: fixed;
-
     gap: 12rem;
+
+    @media screen and (max-width: 1000px) {
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
   &__img{
       display: flex;
+    //   position: absolute;
       width: 55rem;
       margin: 0.5rem 1rem 0.5rem 15rem;
       border-radius: 1rem;
+
+      @media screen and (max-width: 1420px) and (min-width: 1000px) {
+          width: 45rem
+      }
+      @media screen and (max-width: 1000px) and (min-width: 600px) {
+          @include centerContent;
+          justify-content: center;
+          margin-left: 0rem;
+          align-items: center;
+          text-align: center;
+          width: 55rem;
+      }
+      @media screen and (max-width: 600px){
+        width: 46rem;
+        height: 35rem;
+        margin-left: 0rem;
+      }
   }
   &__contents {
       width: 100%;
@@ -174,23 +219,70 @@
       flex-direction: column;
       margin: 4rem 0rem 0rem 9rem;
 
+      @media screen and (max-width: 1308px) and (min-width: 1000px){
+       margin-left: 0rem;
+    }
+    @media screen and (max-width: 1000px) and (min-width: 600px) {
+        justify-content: center;
+        align-items: center;
+        margin-left: 6rem;
+    }
+    @media screen and (max-width: 600px) {
+        justify-content: left;
+        align-items: left;
+        margin-left: 6rem;
+        margin-top: 0rem;
+    }
+
     p{
       color: #2563EB;
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
       line-height: 24px;
+  
+  
  
     }
     h2{
-        width: 70%;
+        width: 90%;
         @include headerContent;
         font-size: 5rem;
+
+    @media screen and (max-width: 1420px) and (min-width: 1308px) {
+            font-size: 4.5rem;
+            width: 100%;
+        } 
+      @media screen and (max-width: 1308px) and (min-width: 1170px){
+        font-size: 4rem;
+        width: 100%;
+        }
+      @media screen and (max-width: 1170px) and (min-width:1000px) {
+         font-size: 3rem;
+         line-height: 35px;
+         width: 100%;
+        }
+        @media screen and (max-width: 1000px) and (min-width: 600px) {
+            justify-content: center;
+            align-items: center;
+            line-height: 35px;
+            font-size: 5rem;
+            margin-left: 2rem;
+            width: 80%;
+        }
+        @media screen and (max-width: 1000px) {
+            font-size: 4rem;
+            line-height: 28px;
+        }
     }
     .about-p {
         margin: 5rem 0rem 0rem 0rem;
          @include paragraphthin;
         width: 75%;
+
+        @media screen and (max-width: 1308px) {
+            width: 90%;
+            }
     }
     Button {
         margin-top: 2rem;
@@ -198,6 +290,14 @@
         display: flex;
         justify-content: center;
         padding: 1rem;
+     @media screen and (max-width: 1420px) and (min-width: 1270px) {
+            // font-size: 4.5rem;
+            // width: 100%;
+            width: 30%;
+        } 
+        @media screen and (max-width: 1270px) {
+         width: 45%;
+        }
     }
   }
 }
