@@ -23,7 +23,7 @@ const Services = () => {
        <div className="services">
           <div className='services__1'  data-aos-duration="1000" data-aos="fade-zoom-in">
             <p>We’ve got you covered</p>  
-            <h2>We help you turn your deas into tangible solutions</h2>
+            <h2>We help you turn your ideas into scalable solutions</h2>
             <p className='-p'>Northstar has the expertise to make your website come to life. Our developers are experts in all of the latest trends, from WordPress to Shopify, so you know that you're in good hands.</p>
             <div className='services__1-skills'>
               {
