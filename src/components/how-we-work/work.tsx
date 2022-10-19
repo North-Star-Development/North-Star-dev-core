@@ -3,10 +3,12 @@
 
 // import relevant modules
 import React, { useEffect } from "react";
+import { useWindowWidth } from "@react-hook/window-size";
 
 //import AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 
 // importing image
 const workCard = require("../../assets/png/work.png");
@@ -20,6 +22,7 @@ interface ListObjectTypes {
 
 // JSX Component
 const HowWeWork = () => {
+    const width = useWindowWidth();
 
     // array of of object list
     const workList:Array<ListObjectTypes> = [
@@ -56,7 +59,10 @@ const HowWeWork = () => {
              <h2 data-aos-duration="1000" data-aos="fade-in" data-aos-delay="120">How we work</h2>
              <p className="-w" data-aos-duration="1000" data-aos="fade-in" data-aos-delay="140">Clarity gives you the blocks & components you need to create a truly professional website.</p>
          </div>
-         <img src={workCard} alt="work card" />
+         {
+             width >= 800 && <img src={workCard} alt="work card" />
+         }
+         
 
        </div>
        <div className="work__detail" data-aos-duration="1000" data-aos="fade-in" data-aos-delay="100">

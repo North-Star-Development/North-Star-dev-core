@@ -553,7 +553,7 @@
        @include headerContent;
        @media screen and (max-width: 700px)  {
         font-size: 3.7rem;
-        line-height: 28px;
+        line-height: 23px;
     }
    }
    &__list {
@@ -611,12 +611,13 @@
             line-height: 5rem;
 
             @media screen and (max-width: 1300px) and (min-width: 700px) {
-                line-height: 28px;
+                line-height: 20px;
                 margin-bottom: 10px;
             }
             @media screen and (max-width: 700px)  {
-                line-height: 28px;
+                line-height: 23px;
                 margin-bottom: 5px;
+                font-size: 1.5rem;
             }
       
          }
@@ -653,6 +654,10 @@
            background-color: #2563EB;
            color: white;
            padding-top: 5rem;
+           @media screen and (max-width: 830px) {
+               width: 100%;
+               padding-right: 8rem;
+           }
          .-we {
            @include subHeader;
            color: #fff;  
@@ -679,15 +684,36 @@
          }
        }
        img {
-           width: 50%
+           width: 50%;
+           @media screen and (max-width: 800px) {
+             display: none;
+        }
        }
     }
     &__detail {
         display: flex;
         margin-left: 10rem;
+        
+        @media screen and (max-width: 800px) {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 5rem;
+            justify-items: center;
+            align-items: center;
+            
+            // justify-content: center;
+            // align-items: center;
+            // text-align: center;
+       }
 
      &__list{
          border-top:2px dashed #E2E8F0; 
+         @media screen and (max-width: 800px) {
+            border-top: unset;
+            margin-bottom: 4rem;
+       }
+
          .p__list {
            width: 5rem;
            height: 5rem;
@@ -711,6 +737,10 @@
        .p2__list {
            @include paragraphthin;
            width: 70%;
+           @media screen and (max-width: 800px) {
+               width: 90%;
+           }
+           
        }
      }
      &__list:nth-child(4){
