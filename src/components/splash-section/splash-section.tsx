@@ -4,22 +4,31 @@
 // import relevant modules
 import React, { useEffect } from "react";
 
+import { useWindowWidth } from "@react-hook/window-size";
+
 //importing Component
 import Button from "../button/button";
 
 //import AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 // importing png or logo
 const splashImg = require('../../assets/png/splash-img.png');
+const mm = require('../../assets/png/mm.png');
+
+
 
 
 
 // JSX Component
 const SplashSection = () => {
+  const width = useWindowWidth();
+
   useEffect(() => {
     AOS.init();
   }, [])
+
    return (
      <section className="splash">
          <div className="splash__section1">
@@ -31,7 +40,7 @@ const SplashSection = () => {
                <Button primary={false} text="Learn More" />
              </div>
          </div>  
-         <img src={splashImg} alt="splash section" /> 
+         <img data-aos="fade-in" data-aos-delay="1000" src={ width <= 600 ? mm : splashImg} alt="splash section" /> 
      </section>
    );
 }
