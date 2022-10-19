@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 
 
 //illustration image
-const aboutImg = require('../../assets/png/about.png');
+const aboutImg = require('../../assets/png/black-people-computer.jpeg');
 
 
 //JSX Component

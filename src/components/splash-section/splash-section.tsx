@@ -16,6 +16,8 @@ import 'aos/dist/aos.css';
 // importing png or logo
 const splashImg = require('../../assets/png/splash-img.png');
 const mm = require('../../assets/png/mm.png');
+const ss = require('../../assets/illustrations/ss.png')
+const ss2 = require('../../assets/illustrations/ss2.png')
 
 
 
@@ -31,6 +33,7 @@ const SplashSection = () => {
 
    return (
      <section className="splash">
+       <img src={ss} alt="ss" className="ss"/>
          <div className="splash__section1">
              <p data-aos="fade-in" data-aos-delay="5000">Welcome to NorthStar</p>
              <h2>Software development <br/> at the speed of  <span>light </span>💫</h2>
@@ -41,6 +44,7 @@ const SplashSection = () => {
              </div>
          </div>  
          <img data-aos="fade-in" data-aos-delay="1000" src={ width <= 600 ? mm : splashImg} alt="splash section" /> 
+         <img src={ss2} alt="ss" className="ss2"/>
      </section>
    );
 }

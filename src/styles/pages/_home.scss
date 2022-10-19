@@ -127,7 +127,32 @@
     }
   }
 }
+.ss {
+    position: absolute;
+    left: -25px;
+    right: 0px;
+    top: -20px;
+    height: 39rem !important;
+    width: 35rem !important;
+    bottom: 0;
+    margin: auto;
 
+
+
+}
+.ss2 {
+    position: absolute;
+    right: -15px;
+    top: 68px;
+    height: 39rem !important;
+    width: 33rem !important;
+    bottom: 0;
+    bottom: 0;
+    margin: auto;
+    @media screen and (max-width: 1000px){
+        top: 300px;
+    }
+}
 // about
 .about {
     display: flex;
@@ -139,7 +164,7 @@
     gap: 12rem;
   &__img{
       display: flex;
-      width: 50rem;
+      width: 55rem;
       margin: 0.5rem 1rem 0.5rem 15rem;
       border-radius: 1rem;
   }
