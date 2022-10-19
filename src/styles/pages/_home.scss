@@ -864,6 +864,9 @@
       padding-bottom: 3rem;
       font-size: 4rem;
       line-height: 4.5rem;
+      @media screen and (max-width: 550px) {
+         font-size: 3.6rem;
+      }
   }
   &s {
       padding: 2rem 6rem;
@@ -962,13 +965,32 @@
     padding: 5rem 3rem 9rem 3rem;
     background: #F8FAFC;
 
+    @media screen and (max-width: 900px) and (min-width: 550px) {
+        flex-direction: column;
+        // @include centerContent;
+    }
+
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+        // @include centerContent;
+    }
+
    &s__1 {
        display: flex;
        flex-direction: column;
        padding-left: 15rem;
        width: 50vw;
+       @media screen and (max-width: 900px)  and (min-width: 550px) {
+           width: 80vw;
+       }
+       @media screen and (max-width: 550px) {
+          padding-left: 1rem;
+          width: 80vw;
+       }
+
    p {
        @include subHeader;  
+    
    }
    h2 {
     @include headerContent;
@@ -977,22 +999,38 @@
     line-height: 4.5rem;
     inline-size: 40rem;
     overflow-wrap: break-word;
-    
+    @media screen and (max-width: 900px) and (min-width: 550px) {
+        font-size: 5rem;
+        inline-size: 50rem;
+    }
+    @media screen and (max-width: 550px) {
+   font-size: 4rem;
+    }
    }
    .text {
        @include paragraphthin;
        padding-bottom: 2.9rem;
        inline-size: 36rem;
        overflow-wrap: break-word;
+       @media screen and (max-width: 900px) {
+           inline-size: 45rem;
+       }
+
    }
    img {
-       width : 75%
+       width : 75%;
+       @media screen and (max-width: 900px) and (min-width: 550px) {
+           width: 100%;
+       }
+       @media screen and (max-width: 550px) {
+         width: 113%;
+       }
    }
      
    } 
    &s__2 {
        width: 40vw;
-       margin-top: 6rem;
+       margin-top: 0rem;
 
      .-c2{
         display: flex;
@@ -1002,6 +1040,18 @@
         box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
         border-radius: 1.2rem;
         padding: 4rem 10rem 4rem 10rem;
+
+        @media screen and (max-width: 900px) and (min-width: 550px) {
+            width: 70vw;
+            margin-left: 12rem;
+
+        }
+        @media screen and (max-width: 550px)  {
+           margin-left: 1rem;
+           width: 90vw;
+        //    @include centerContent;
+        }
+        
 
           p {
             font-weight: 600;
@@ -1054,6 +1104,13 @@
     }
     
    }
+   .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
 }
 
 //footer
