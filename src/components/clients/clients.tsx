@@ -4,6 +4,8 @@
 // import relevant modules
 import React, { useEffect, useRef, useState } from "react";
 
+import { useWindowWidth } from "@react-hook/window-size";
+
 //import AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -56,6 +58,7 @@ const Clients = () => {
             title: "Graphic Designer"
         }
     ]
+    const width = useWindowWidth();
     const delay = 3000;
     const [index, setIndex]:any = useState(0);
     const timeoutRef:any = useRef(null);
@@ -81,14 +84,14 @@ const Clients = () => {
         <p data-aos-duration="1000" data-aos="fade-in">Several reports say we are excellent</p>
         <h2 data-aos-duration="1000" data-aos="fade-in">Our happy clients say about us</h2>
          <div className="clients " data-aos-duration="1000" data-aos-delay="100" data-aos="fade-in" style={{
-            marginLeft: "57rem",
+            marginLeft: width>= 1250 ? "60rem" : "95rem",
          }}>	    
             {
               clientsDetails.map((detail, id) => (
                  <div className="clients__detail" key={id} style={{
-                    
+        
                     transition: "ease 1000ms",
-                    transform: `translate3d(${-index * 70}%, 0, 0)`
+                    transform: `${width <= 750 ? `translate3d(${-index * 110}%, 0, 0)` : `translate3d(${-index * 70}%, 0, 0)`}`
               }}>
                      <span>&#11088;&#11088;&#11088;&#11088;&#11088;</span>
                      <p>{detail?.comments}</p>

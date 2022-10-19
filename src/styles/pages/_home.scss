@@ -872,6 +872,21 @@
       background: url("../../assets/illustrations/Shadow.png");
       background-repeat: no-repeat;
       background-position: 25% 75%;
+
+      @media screen and (max-width: 1250px) and (min-width: 750px) {
+        background-position: 15% 75%;
+      } 
+
+      @media screen and (max-width: 750px) and (min-width: 450px)  {
+        margin-left: 110rem !important;
+        background-position: 15% 45%;
+      } 
+      @media screen and (max-width: 450px) {
+        margin-left: 150rem !important;
+        // background-position: 0% 10%;
+        background-size: cover;
+      } 
+      
     //   background-attachment: fixed;
     //   position: fixed;
       gap: 3rem;
