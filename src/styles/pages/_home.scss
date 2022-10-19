@@ -769,6 +769,10 @@
         padding-bottom: 3rem;
         font-size: 4rem;
         line-height: 4.5rem;
+        @media screen and (max-width: 800px) {
+        line-height: 28px;
+        font-size: 4rem;
+        }
 
     }
     .subh{
@@ -779,12 +783,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
         gap: 2rem;
+        @media screen and (max-width: 940px) {
+            grid-template-columns:  1fr 1fr;
+        }
      &__member {
          display: flex;
          flex-direction: column;
          width: 26rem;
          justify-content: center;
          align-items: center;
+
+         @media screen and (max-width: 430px) {
+              width: 23rem;
+         }
         
         .img_o {
             display: flex;
@@ -795,6 +806,10 @@
             border-radius: 1.5rem 1.5rem 0rem 0rem;
             border-top: 1px solid #E4E4E7;
             box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
+
+            @media screen and (max-width: 430px) {
+                width: 23rem;
+           } 
           .img {
             padding: 2rem 0rem;
             display: flex;
