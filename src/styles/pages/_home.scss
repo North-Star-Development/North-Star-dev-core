@@ -118,9 +118,9 @@
     @media screen and (max-width: 600px){
         @include centerContent;
         text-align: center;
-        width: 45rem;
+        width: 40rem;
         margin-top: 2rem;
-        height: 45rem;
+        height: 40rem;
     }
   }
 }
@@ -652,6 +652,10 @@
         display: flex;
         height: 42rem;
         padding-bottom: 6rem;
+        @media screen and (max-width: 500px) {
+          height: 33rem;
+        }
+
        &card {
            width: 50%;
            @include centerContent;
@@ -662,6 +666,7 @@
            @media screen and (max-width: 830px) {
                width: 100%;
                padding-right: 12rem;
+          
            }
          .-we {
            @include subHeader;
@@ -685,8 +690,8 @@
              overflow-wrap: break-word;
              padding: 3rem 0rem 0rem 16.2rem;
              @media screen and (max-width: 500px) {
-               inline-size: 47rem;
-               padding-left: 13rem;
+               inline-size: 48rem;
+               padding-left: 14rem;
              }
              
          }
@@ -1064,7 +1069,8 @@
 
         }
         @media screen and (max-width: 550px)  {
-        
+           padding-left: 5rem;
+           padding-right: 7rem;
            width: 88vw;
         //    @include centerContent;
         }
