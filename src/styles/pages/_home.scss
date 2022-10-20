@@ -118,9 +118,9 @@
     @media screen and (max-width: 600px){
         @include centerContent;
         text-align: center;
-        width: 50rem;
+        width: 45rem;
         margin-top: 2rem;
-        height: 50rem;
+        height: 45rem;
     }
   }
 }
@@ -159,11 +159,13 @@
     position: absolute;
     margin-left: 139px;
     margin-top: 6px;
+    display: none;
     // right: -25px;
     // top: 68px;
     
 }
 .alt2 {
+    display: none;
     width: 8rem !important;
     height: 8rem !important;
     position: absolute;
@@ -205,11 +207,11 @@
           margin-left: 0rem;
           align-items: center;
           text-align: center;
-          width: 65rem;
+          width: 55rem;
           margin-bottom: 2rem;
       }
       @media screen and (max-width: 600px){
-        width: 46rem;
+        width: 45rem;
         height: 35rem;
         margin-left: 0rem;
       }
@@ -402,7 +404,7 @@
         @media screen and (max-width: 600px) {
             margin-right: 0rem;
             margin-left: 0rem;
-            width: 45rem;
+            width: 40rem;
         }
 
      }
@@ -552,7 +554,7 @@
    h2 {
        @include headerContent;
        @media screen and (max-width: 700px)  {
-        font-size: 3.7rem;
+        font-size: 3.5rem;
         line-height: 23px;
     }
    }
@@ -595,6 +597,9 @@
           justify-content: center;
           align-items: center;
        }
+       @media screen and (max-width: 700px) and (min-width: 380px) {
+           width: 116%
+       }
        
        &detail {
            width: 70%;
@@ -617,7 +622,7 @@
             @media screen and (max-width: 700px)  {
                 line-height: 23px;
                 margin-bottom: 5px;
-                font-size: 1.5rem;
+                font-size: 1.7rem;
             }
       
          }
@@ -656,7 +661,7 @@
            padding-top: 5rem;
            @media screen and (max-width: 830px) {
                width: 100%;
-               padding-right: 8rem;
+               padding-right: 12rem;
            }
          .-we {
            @include subHeader;
@@ -794,7 +799,7 @@
          align-items: center;
 
          @media screen and (max-width: 430px) {
-              width: 23rem;
+              width: 21rem;
          }
         
         .img_o {
@@ -808,12 +813,16 @@
             box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
 
             @media screen and (max-width: 430px) {
-                width: 23rem;
+                width: 21rem;
            } 
           .img {
             padding: 2rem 0rem;
             display: flex;
             width: 18rem;
+
+            @media screen and (max-width: 430px) { 
+                width: 14rem;
+            }
         }  
         }
     
@@ -1047,8 +1056,8 @@
 
         }
         @media screen and (max-width: 550px)  {
-           margin-left: 1rem;
-           width: 90vw;
+        
+           width: 88vw;
         //    @include centerContent;
         }
         
