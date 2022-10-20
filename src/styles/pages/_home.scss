@@ -652,6 +652,10 @@
         display: flex;
         height: 42rem;
         padding-bottom: 6rem;
+        @media screen and (max-width: 500px) {
+          height: 33rem;
+        }
+
        &card {
            width: 50%;
            @include centerContent;
@@ -662,6 +666,7 @@
            @media screen and (max-width: 830px) {
                width: 100%;
                padding-right: 12rem;
+          
            }
          .-we {
            @include subHeader;
