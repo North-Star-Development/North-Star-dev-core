@@ -121,14 +121,15 @@
       height: 20%;
       overflow: hidden;
       background-color: #C3F7B6;
-      margin-top: -0.1rem;
+      margin-top: -0.5rem;
+      margin-bottom: -2rem;
+      margin-right: -1rem;
       font-weight: bold;
 
     }
     .nav-bar li a {
       position: relative;
       top: 45%;
-      // color: var(--.nav-barColor);
       color:#2851E3;
       text-transform: uppercase;
       letter-spacing: 4px;
@@ -145,7 +146,6 @@
       height: 3px;
       position: absolute;
       background-color: #2851E3;
-      // background-color: var(Color);
       top: 47.5%;
       left: 0;
       opacity: 0;

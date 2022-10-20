@@ -15,7 +15,10 @@
    
     .overlay {
         animation : slideup 1s linear 1.5s both;
-        
+        @media screen and (max-width: 500px) {
+        margin-bottom: -0.9rem;
+        margin-top: -0.6rem;
+        } 
     }
    
     &__overlay {
@@ -27,10 +30,15 @@
         flex-direction: row;
 
       li {
-          width : 25vw;
+          width : 29vw;
           background: #C3F7B6;
           height: 100vh;
-
+          
+        @media screen and (max-width: 500px) {
+            margin-right: -0.2rem;
+            margin-bottom: -0.9rem;
+            margin-top: -0.6rem;
+        }
       }
     }
     .content {
