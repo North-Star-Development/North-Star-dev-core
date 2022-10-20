@@ -18,7 +18,7 @@ const SplashBottom = () => {
       }}>
        <img
         style={{
-            marginTop: "-5rem",
+            marginTop: "-6.3rem",
             width: "100%"
         }} 
         className="buttom"
