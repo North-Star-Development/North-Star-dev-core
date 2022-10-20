@@ -32,7 +32,7 @@ const SplashSection = () => {
   }, [])
 
    return (
-     <section className="splash">
+     <section className="splash" id="home">
        <img src={ss} alt="ss" className="ss"/>
          <div className="splash__section1">
              <p data-aos="fade-in" data-aos-delay="5000">Welcome to NorthStar</p>

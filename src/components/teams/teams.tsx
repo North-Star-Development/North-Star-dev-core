@@ -70,7 +70,7 @@ const Teams = () => {
       AOS.init()
     })
     return (
-      <div className="team">
+      <div className="team" id="team">
          <p data-aos="fade-in" data-aos-duration="1000">Baddasses you can back on</p> 
          <h2 data-aos="fade-in" data-aos-duration="1000">Global Professional Creative</h2>
          <h2 className="subh" data-aos="fade-in" data-aos-duration="1000"> Team Members</h2>

@@ -80,7 +80,7 @@ const Clients = () => {
      
     }, [index])
     return (
-       <div className="client">
+       <div className="client" id="testimonials">
         <p data-aos-duration="1000" data-aos="fade-in">Several reports say we are excellent</p>
         <h2 data-aos-duration="1000" data-aos="fade-in">Our happy clients say about us</h2>
          <div className="clients " data-aos-duration="1000" data-aos-delay="100" data-aos="fade-in" style={{

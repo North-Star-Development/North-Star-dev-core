@@ -16,8 +16,8 @@
     .overlay {
         animation : slideup 1s linear 1.5s both;
         @media screen and (max-width: 500px) {
-        margin-bottom: -0.9rem;
-        margin-top: -0.6rem;
+        // margin-bottom: -0.9rem;
+        // margin-top: -0.6rem;
         } 
     }
    
@@ -36,8 +36,8 @@
           
         @media screen and (max-width: 500px) {
             margin-right: -0.2rem;
-            margin-bottom: -0.9rem;
-            margin-top: -0.6rem;
+            // margin-bottom: -0.9rem;
+            // margin-top: -0.6rem;
         }
       }
     }
