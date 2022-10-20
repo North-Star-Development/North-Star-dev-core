@@ -23,13 +23,45 @@ const Navbar = () => {
           width >= 850 ?
           <>
             <div className='nav__content'>
-              <p><span>Home</span></p>
-              <p><span> About</span></p>
-              <p><span>Services</span></p>
-              <p><span>How we work</span></p>
-              <p><span>Testimonials</span></p>
-              <p><span>Team</span></p>
-              <p><span>Contact Us</span></p>
+              <p><span><a href="#home" style={{
+                  textDecoration: "none",
+                  color: "white"
+                 }}>Home</a></span></p>
+              <p><span><a href='#about' style={{
+                  textDecoration: "none",
+                  color: "white"
+                 }}>About</a></span></p>
+              <p><span><a href='#services' style={{
+                  textDecoration: "none",
+                  color: "white"
+                 }}>Services</a></span></p>
+              <p><span><a href='#work' style={{
+                  textDecoration: "none",
+                  color: "white"
+                 }}>How we work</a></span></p>
+              <p><span><a href='#testimonials' style={{
+                  textDecoration: "none",
+                  color: "white"
+                 }}>Testimonials</a></span></p>
+              <p>
+                <span>
+                  <a href="#team"
+                    style={{
+                  textDecoration: "none",
+                  color: "white"
+                 }}>Team</a></span></p>
+              <p>
+              
+                  <a href="#contact" 
+                    style={{
+                    textDecoration: "none",
+                    color: "white"
+                     }}
+                  >
+                   Contact Us
+                  </a>
+                
+              </p>
             </div>
             <Button primary={true} text='Get in Touch' />
           </> : 
