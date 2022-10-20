@@ -211,8 +211,8 @@
           margin-bottom: 2rem;
       }
       @media screen and (max-width: 600px){
-        width: 45rem;
-        height: 35rem;
+        width: 40rem;
+        height: 37rem;
         margin-left: 0rem;
       }
   }
@@ -686,6 +686,11 @@
              inline-size: 45rem;
              overflow-wrap: break-word;
              padding: 3rem 0rem 0rem 16.2rem;
+             @media screen and (max-width: 500px) {
+               inline-size: 48rem;
+               padding-left: 10rem;
+             }
+             
          }
        }
        img {
@@ -788,7 +793,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
         gap: 2rem;
-        @media screen and (max-width: 940px) {
+        @media screen and (max-width: 940px) and (min-width: 500px) {
+            grid-template-columns:  1fr 1fr;
+          
+        }
+        @media screen and (max-width: 500px) {
+            gap: 1rem;
             grid-template-columns:  1fr 1fr;
         }
      &__member {
@@ -799,7 +809,7 @@
          align-items: center;
 
          @media screen and (max-width: 430px) {
-              width: 21rem;
+              width: 20rem;
          }
         
         .img_o {
@@ -813,7 +823,7 @@
             box-shadow: 20px 20px 70px rgba(37, 99, 235, 0.06);
 
             @media screen and (max-width: 430px) {
-                width: 21rem;
+                width: 20rem;
            } 
           .img {
             padding: 2rem 0rem;
@@ -821,7 +831,7 @@
             width: 18rem;
 
             @media screen and (max-width: 430px) { 
-                width: 14rem;
+                width: 13rem;
             }
         }  
         }
@@ -1039,7 +1049,7 @@
    } 
    &s__2 {
        width: 40vw;
-       margin-top: 0rem;
+       margin-top: 5rem;
 
      .-c2{
         display: flex;
@@ -1077,7 +1087,12 @@
             padding: 0.6rem 0rem;
             width: 100%;
             margin: 2rem 0rem;
+            border-radius: unset !important;
             border-bottom: solid 1px #D4D4D8;
+
+            @media screen and (max-width: 400px) {
+                width: 110%
+            }
         }
         .form-control {
             margin-top: 0 !important;
@@ -1185,6 +1200,6 @@ Button {
 
 .splash__bottom{
     @media screen and (max-width: 500px){
-      margin-top: -0.8rem !important;
+      margin-top: -1.3rem !important;
     }
 }
