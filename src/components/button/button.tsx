@@ -7,6 +7,12 @@ import React from 'react'
 //JSX component with props
 const Button = ({text, primary}) => {
     return (
+      <a href={`${primary ? "#contact" : "#about"}`}
+        style={{
+        textDecoration: "none",
+        color: "white",
+       }}
+       >
       <button 
        className=''
         style={{
@@ -15,8 +21,9 @@ const Button = ({text, primary}) => {
            color: primary? "#25136D" : "#fff"
         }}
        >
-        {text}
+       {text}
       </button>
+      </a>
     )
 }
 

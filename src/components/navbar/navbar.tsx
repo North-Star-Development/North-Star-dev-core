@@ -22,36 +22,77 @@ const Navbar = () => {
           {
           width >= 850 ?
           <>
-            <div className='nav__content'>
-              <p><span><a href="#home" style={{
-                  textDecoration: "none",
-                  color: "white"
-                 }}>Home</a></span></p>
-              <p><span><a href='#about' style={{
-                  textDecoration: "none",
-                  color: "white"
-                 }}>About</a></span></p>
-              <p><span><a href='#services' style={{
-                  textDecoration: "none",
-                  color: "white"
-                 }}>Services</a></span></p>
-              <p><span><a href='#work' style={{
-                  textDecoration: "none",
-                  color: "white"
-                 }}>How we work</a></span></p>
-              <p><span><a href='#testimonials' style={{
-                  textDecoration: "none",
-                  color: "white"
-                 }}>Testimonials</a></span></p>
+            <div className='nav__content' style={{
+              zIndex : "1"
+            }}>
+              <p>
+                <span>
+                  <a href="#home"
+                    style={{
+                    textDecoration: "none",
+                    color: "white",
+                 }}>
+                   Home
+                  </a>
+                </span>
+              </p>
+              <p>
+                <span>
+                  <a href='#about' 
+                    style={{
+                    textDecoration: "none",
+                    color: "white"
+                 }}>
+                   About
+                  </a>
+                </span>
+              </p>
+              <p>
+                <span>
+                  <a href='#services' 
+                  style={{
+                    textDecoration: "none",
+                    color: "white"
+                 }}>
+                   Services
+                 </a>
+                 </span>
+              </p>
+              <p>
+                <span>
+                  <a href='#work' 
+                  style={{
+                    textDecoration: "none",
+                    color: "white"
+                 }}>
+                   How we work
+                  </a>
+                </span>
+              </p>
+              <p>
+                <span>
+                  <a href='#testimonials' 
+                  style={{
+                    textDecoration: "none",
+                    color: "white"
+                 }}>
+                  Testimonials
+                </a>
+                </span>
+              </p>
               <p>
                 <span>
                   <a href="#team"
                     style={{
-                  textDecoration: "none",
-                  color: "white"
-                 }}>Team</a></span></p>
+                    textDecoration: "none",
+                    color: "white"
+                   }}>
+                   Team
+                 </a>
+                </span>
+               </p>
               <p>
-              
+                <span>
                   <a href="#contact" 
                     style={{
                     textDecoration: "none",
@@ -60,7 +101,7 @@ const Navbar = () => {
                   >
                    Contact Us
                   </a>
-                
+                </span>
               </p>
             </div>
             <Button primary={true} text='Get in Touch' />
