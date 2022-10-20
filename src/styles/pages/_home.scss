@@ -1125,14 +1125,28 @@
     background: #F8FAFC;
     padding: 3rem;
 
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        @include centerContent;
+    }
+
     img {
         padding-top: 1rem;
         width: 15rem;
+
+    @media screen and (max-width: 500px) {
+        padding-bottom: 4rem;
+    }
     }
     &__{
         display: flex;
         gap: 2rem;
         margin-top: 1.5rem;
+
+
+    @media screen and (max-width: 500px) {
+        gap: 4rem;
+    }
 
         h3{
             margin-top: -0.35rem;
