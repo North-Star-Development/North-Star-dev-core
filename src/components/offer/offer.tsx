@@ -54,7 +54,7 @@ const OfferList = () => {
       AOS.init()
     }, [])
     return (
-      <div className="offer">
+      <div className="offer" id="services">
           <p data-aos-duration="1000" data-aos="fade-in">Whaat we do</p>
           <h2 data-aos-duration="1000" data-aos="fade-in"> Here are a list of services we offer</h2>
           <div className="offer__list" data-aos-duration="1000" data-aos="fade-in">

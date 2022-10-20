@@ -42,7 +42,7 @@ const Achievements = () => {
      AOS.init();
  }, [])
     return(
-     <div className="achievements">
+     <div className="achievements" id="achievements">
          <p data-aos-duration="1000" data-aos="fade-in">The numbers don't lie</p>
          <h2 data-aos-duration="1000" data-aos="fade-in"> Our Achievements</h2>
          <div className="achievements_" data-aos-delay="100" data-aos-duration="1000" data-aos="fade-zoom-in" >

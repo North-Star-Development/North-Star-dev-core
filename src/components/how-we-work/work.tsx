@@ -52,7 +52,7 @@ const HowWeWork = () => {
       AOS.init()
     }, [])
     return (
-     <div className="work">
+     <div className="work" id="work">
        <div className="work__" data-aos-duration="1000" data-aos="fade-in">
          <div className="work__card">
              <p className="-we" data-aos-duration="1000" data-aos="fade-in" data-aos-delay="100">Here's how we work</p>

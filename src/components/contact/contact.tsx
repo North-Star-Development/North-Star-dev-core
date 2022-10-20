@@ -22,7 +22,7 @@ const Contacts = () => {
   })
 
     return (
-     <div className="contact">
+     <div className="contact" id="contact">
         <div className="contacts__1" data-aos-duration="1000" data-aos="fade-in">
           <p>Say hello to Northstar</p>
           <h2>Love to hear from you, Get in touch <span className="wave">👋🏽</span></h2>

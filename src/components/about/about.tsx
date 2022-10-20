@@ -21,7 +21,7 @@ const About = () => {
     AOS.init();
   }, [])
     return (
-      <div className="about">
+      <section className="about" id="about">
         <img className="alt" src={ss} alt="ss" data-aos="fade-in" data-aos-duration="2000"/>
         <img className="about__img" src={aboutImg} alt="about northstar" data-aos="fade-in" data-aos-duration="2000"/>
         <img className="alt2" src={ss2} alt="ss" data-aos="fade-in" data-aos-duration="2000"/>
@@ -32,7 +32,7 @@ const About = () => {
           <Button primary={true} text="Get in Touch" data-aos="fade-in" />
         </div>     
 
-      </div>
+      </section>
     );
 }
 
