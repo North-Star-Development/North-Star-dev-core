@@ -679,16 +679,14 @@
          .-w {
              @include paragraphthin;
              color: #CBD5E1;
-            //  display: flex;
-            //  text-align: right;
              direction: ltr;
              width: 100%;
              inline-size: 45rem;
              overflow-wrap: break-word;
              padding: 3rem 0rem 0rem 16.2rem;
              @media screen and (max-width: 500px) {
-               inline-size: 48rem;
-               padding-left: 10rem;
+               inline-size: 47rem;
+               padding-left: 13rem;
              }
              
          }
