@@ -118,9 +118,9 @@
     @media screen and (max-width: 600px){
         @include centerContent;
         text-align: center;
-        width: 45rem;
+        width: 40rem;
         margin-top: 2rem;
-        height: 45rem;
+        height: 40rem;
     }
   }
 }
@@ -685,8 +685,8 @@
              overflow-wrap: break-word;
              padding: 3rem 0rem 0rem 16.2rem;
              @media screen and (max-width: 500px) {
-               inline-size: 47rem;
-               padding-left: 13rem;
+               inline-size: 48rem;
+               padding-left: 14rem;
              }
              
          }
@@ -1064,7 +1064,8 @@
 
         }
         @media screen and (max-width: 550px)  {
-        
+           padding-left: 5rem;
+           padding-right: 7rem;
            width: 88vw;
         //    @include centerContent;
         }
