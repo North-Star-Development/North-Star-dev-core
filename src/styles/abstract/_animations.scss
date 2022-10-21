@@ -2,7 +2,6 @@
 // 17 U.S.C §§ 101-1511
 
 // for animations
-
 @keyframes rotation {
     from {
         transform : rotate(0deg);
@@ -11,7 +10,6 @@
         transform: rotate(359deg);
     }
 }
-
 @keyframes slideup {
     from {
         transfrom : translateY(0);
@@ -20,7 +18,6 @@
         transform : translatey(-100%);
     }
 }
-
 @keyframes preloaderTextAnim {
     0% {
       transform: translateY(0%);
@@ -50,7 +47,6 @@
       background-position: 0% 50%;
     }
   }
-
   @keyframes slide-in {
     from {
       transform: translateX(-100%);
@@ -59,7 +55,6 @@
       transform: translateX(0);
     }
   }
-
   @keyframes slide-out {
     from {
       transform: translateX(0);
@@ -68,7 +63,6 @@
       transform: translateX(-100%);
     }
   }
-
   @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */

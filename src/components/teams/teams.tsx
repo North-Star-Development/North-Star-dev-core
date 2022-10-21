@@ -70,6 +70,7 @@ const Teams = () => {
     useEffect(() => {
       AOS.init()
     })
+   
     return (
       <div className="team" id="team">
          <p data-aos="fade-in" data-aos-duration="1000">Baddasses you can back on</p> 
