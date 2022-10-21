@@ -23,7 +23,7 @@ const Contacts = () => {
 
     return (
      <div className="contact" id="contact">
-        <div className="contacts__1" data-aos-duration="1000" data-aos="fade-in">
+        <div className="contacts__1" >
           <p>Say hello to Northstar</p>
           <h2>Love to hear from you, Get in touch <span className="wave">👋🏽</span></h2>
           <p className="text">We exist to make your lives better and bring your ideas to live. Is there something you’d need our help with? Please feel free to share.</p>
@@ -32,16 +32,30 @@ const Contacts = () => {
         <div className="contacts__2" data-aos-duration="2000" data-aos="fade-in">
           <div className="-c2">
              <p>Send us a message</p>
-           <form>
-             <input type="text" placeholder="What is your Name?"/>
-             <input type="text" placeholder="What is your email address?" />
+           <form 
+             action="https://formspree.io/f/mjvjprek"
+             method="POST">
+             <input name="name"
+                    type="text" 
+                    placeholder="What is your Name?" 
+                    required/>
+             <input name="email"
+                     type="text" 
+                     placeholder="What is your email address?" 
+                     required/>
              <PhoneInput
+                // name="number"
                 country={'us'}
                 // value={this.state.phone}
                 // onChange={phone => this.setState({ phone })}
                 />
-               <input className="messages" type="text" placeholder="Write your message"/>
-               <Button primary={true} text="Send Message" />
+               <input 
+                 name="messages"
+                 className="messages"
+                 type="text" 
+                 placeholder="Write your message" 
+                required/>
+               <button type="submit">Send Message </button>
            </form>
         </div>  
           </div>
