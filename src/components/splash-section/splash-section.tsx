@@ -38,7 +38,10 @@ const SplashSection = () => {
              <p data-aos="fade-in" data-aos-delay="5000">Welcome to NorthStar</p>
              <h2>Software development <br/> at the speed of  <span>light </span>💫</h2>
              <p className="splash__section1-p"> Northstar is a design and software development agency that delivers affordable, professional, and fast service. We've got your back!</p>
-             <div className="splash__section1-buttons">
+             <div className="splash__section1-buttons" 
+               style={{
+               zIndex : "1"
+             }}>
                <Button primary={true} text="Get in Touch"  />
                <Button primary={false} text="Learn More" />
              </div>

@@ -7,20 +7,14 @@
     z-index: 20;
     display: grid;
     place-content: center;
-
     &__overlay {
         background-color: #10101a;
     }
-  
-   
     .overlay {
         animation : slideup 1s linear 1.5s both;
         @media screen and (max-width: 500px) {
-        // margin-bottom: -0.9rem;
-        // margin-top: -0.6rem;
         } 
     }
-   
     &__overlay {
         position : relative;
   
@@ -36,8 +30,6 @@
           
         @media screen and (max-width: 500px) {
             margin-right: -0.2rem;
-            // margin-bottom: -0.9rem;
-            // margin-top: -0.6rem;
         }
       }
     }
@@ -56,7 +48,6 @@
     img {
         animation: rotation 8s infinite linear;
         width: 34rem;
-    
     }  
 }
    &s__1 {
@@ -77,7 +68,5 @@
     overflow: hidden;
     white-space: nowrap;
   animation: example 2s linear 0s  alternate;
-
-
    }
 }

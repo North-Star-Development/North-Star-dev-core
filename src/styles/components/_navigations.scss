@@ -10,11 +10,9 @@
     background: #2851E3;
     padding: 1rem 2rem;
     padding-bottom: 5rem;
-
   img {
       width: 13rem;
       height: 2.6rem;
-      // margin-top: 1rem;
       @media screen and (max-width: 850px) {
         margin-top: 1.7rem;
       }
@@ -23,11 +21,9 @@
       display: flex;
       flex-direction: row;
       color: #FFFF;
-
       @media screen and (max-width: 850px) {
         display : none
       }
-
     p {
         margin: 0.5rem 1rem 0rem 1rem;
         font-weight: 500;
@@ -36,7 +32,6 @@
           cursor: pointer;
       }  
     }
- 
   }
   Button {
     padding: 0.7rem 3rem;
@@ -44,10 +39,8 @@
       display : none
     }
   }
-
   /* --- Menu Bars ------------------------------------ */
-
-    .menu-bars {
+      .menu-bars {
       position: fixed;
       top: 1rem;
       right: 2rem;
@@ -58,7 +51,6 @@
       padding: 1rem;
       border-radius: 1rem;
     }
-
     .bar1,
     .bar2,
     .bar3 {
@@ -68,17 +60,14 @@
       margin: 8px 0;
       transition: 0.4s;
     }
-
     /* Rotate first bar */
     .change .bar1 {
       transform: rotate(-45deg) translate(-2px, 8px);
     }
-
     /* Fade out the second bar */
     .change .bar2 {
       opacity: 0;
     }
-
     /* Rotate last bar */
     .change .bar3 {
       transform: rotate(45deg) translate(1px, -5px)
@@ -94,7 +83,6 @@
       background-color: rgba(0, 0, 0, 0.7) ;
       transform: translateX(-100vw);
     }
-  
     /*overlay slide in right*/
     .overlay-slide-right {
       transition: all 0.7s ease-in-out;
@@ -110,7 +98,6 @@
       margin: 0;
       padding: 0;
     }
-  
     .nav-bar ul {
       display: flex;
       flex-direction: column;
@@ -125,7 +112,6 @@
       margin-bottom: -2rem;
       margin-right: -1rem;
       font-weight: bold;
-
     }
     .nav-bar li a {
       position: relative;
@@ -153,8 +139,7 @@
     .nav-bar li a:hover::before {
       opacity: 1;
     }
-    
-    .slide-in-1 {
+     .slide-in-1 {
       animation: slide-in 0.7s linear 0.2s both;
     }
     .slide-in-2 {
@@ -175,7 +160,6 @@
     .slide-in-7 {
       animation: slide-in 0.7s linear 1.4s both;
     }
-
     .slide-out-1 {
       animation: slide-out 0.5s linear 1.0s both;
     }
