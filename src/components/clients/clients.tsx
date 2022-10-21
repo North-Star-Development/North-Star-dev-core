@@ -28,21 +28,21 @@ const Clients = () => {
     // Array of objects Lists
     const clientsDetails:Array<clientDetailsTypes> = [
         {
-            comments : "“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”",
+            comments : "“Seamless transaction. Extremely knowledgeable professionals who offered sound advice and guidance the entire build AND aftercare and follow up, Highly recommend”",
             img : eachClientImg(1),
-            name: "Leslie Godwin",
+            name: "Randal Parker",
             title: "Freelance React Developer"
         },
         {
-            comments : "“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.”",
+            comments : "“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”",
             img : eachClientImg(2),
-            name: "Jacob Jones",
+            name: "Cesar Cruz",
             title: "Digital Marketer"
         },
         {
-            comments : "“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”",
+            comments : "“This is single handedly the go-to business for my technology needs. they built and executed my music platform, I will be recommending this company to some of my friends in need of websites and apps.”",
             img : eachClientImg(3),
-            name: "Jenny Wilson",
+            name: "Patrick Rodgers",
             title: "Graphic Designer"
         },
         {

@@ -33,35 +33,36 @@ const Teams = () => {
  // Array of Objects Lists
     const teamMemojis:Array<teamMemojisTypes> = [
         {
-          bg : "#C3F7B6",
-          img: eachMemberImg(1),
-          imgSide : eachMemberSide(1),
-          name : "Andrew Zion",
+          bg : "#B0E3FF",
+          img: eachMemberImg(2),
+          imgSide : eachMemberSide(2),
+          name : "Aaron Frazier",
           title: "CEO & Founder",
           alt: "member 1 emojis"
         },
         {
-            bg : "#B0E3FF",
-            img: eachMemberImg(2),
-            imgSide : eachMemberSide(2),
-            name : "Bukayo saka",
-            title: "Lead Software Engineer",
-            alt: "member 2 emojis"
-       },
-       {
-            bg : "#FFDFB0",
-            img: eachMemberImg(3),
-            imgSide : eachMemberSide(3),
-            name : "Devcenter Lore",
-            title: "Software Engineer",
-            alt: "member 3 emojis"
-      },
-      {
             bg : "#FFC0DE",
             img: eachMemberImg(4),
             imgSide : eachMemberSide(4),
-            name : "Degarden Pous",
-            title: "Software Engineer",
+            name : "Zaid Abukhadier",
+            title: "Lead Software Engineer",
+            alt: "member 3 emojis"
+        },
+        {
+            bg : "#C3F7B6",
+            img: eachMemberImg(1),
+            imgSide : eachMemberSide(1),
+            name : "Benita Kirui",
+            title: "Head Of Product",
+            alt: "member 2 emojis"
+       },
+       
+      {
+            bg : "#FFDFB0", 
+            img: eachMemberImg(3),
+            imgSide : eachMemberSide(3),
+            name : "Kin Kalid",
+            title: "Lead Software Engineer",
             alt: "member 3 emojis"
       } 
     ]
