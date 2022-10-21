@@ -8,14 +8,17 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 // dynamically importing member images
 const eachMemberImg = (member : number) => {
     return require(`../../assets/illustrations/Memoji${member}.png`);
 }
+
 // dynamically importing member images
 const eachMemberSide = (eachmember : number) => {
   return require(`../../assets/illustrations/member${eachmember}.png`)
 }
+
 
 // types
 interface teamMemojisTypes {
@@ -105,5 +108,6 @@ const Teams = () => {
       </div>
     );
 }
+
 
 export default Teams;
