@@ -128,7 +128,11 @@ const Navbar = () => {
                {`nav-overlay ${toggleMenu ?
                     "overlay-slide-right": 
                     "overlay-slide-left"}`}
-                id="nav-overlay" >
+                id="nav-overlay" style={{
+        
+                    zIndex : "2"
+                
+                }} >
              <div className="nav-bar"> 
             <ul>
                 <li onClick={() => setToggleMenu(!toggleMenu)} id="nav-1" className={`${toggleMenu ? "slide-in-1" : "slide-out-1"} `}><a href="#home">Home</a></li>
