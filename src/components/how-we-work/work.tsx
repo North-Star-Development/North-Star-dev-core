@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 // importing image
 const workCard = require("../../assets/png/work.png");
 
+
 // types
 interface ListObjectTypes {
     slug : string,
@@ -49,7 +50,9 @@ const HowWeWork = () => {
     ]
 
     useEffect(() => {
-      AOS.init()
+
+      AOS.init();
+      
     }, [])
     return (
      <div className="work" id="work">

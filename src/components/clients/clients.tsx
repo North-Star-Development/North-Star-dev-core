@@ -2,19 +2,24 @@
 // 17 U.S.C §§ 101-1511
 
 // import relevant modules
+
 import React, { useEffect, useRef, useState } from "react";
 
 import { useWindowWidth } from "@react-hook/window-size";
 
 //import AOS
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // dynamically gettting images of clients
+
 const eachClientImg = (client : number) => {
     return require(`../../assets/png/Oval${client}.png`)
 }
+
 //client details types
+
 interface clientDetailsTypes {
     comments :string,
     img: any,
@@ -23,9 +28,11 @@ interface clientDetailsTypes {
 }
 
 //JSX Component
+
 const Clients = () => {
   
     // Array of objects Lists
+
     const clientsDetails:Array<clientDetailsTypes> = [
         {
             comments : "“Seamless transaction. Extremely knowledgeable professionals who offered sound advice and guidance the entire build AND aftercare and follow up, Highly recommend”",
@@ -58,6 +65,8 @@ const Clients = () => {
             title: "Developer & Freelancer"
         }
     ]
+
+
     const width = useWindowWidth();
     const delay = 3000;
     const [index, setIndex]:any = useState(0);

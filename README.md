@@ -1,3 +1,3 @@
-## North Star Development Agency 
+## North Star Development and Design Agency 
 
-- still in development
+- Live at [Northstar](https://www.northstardevelopmentllc.com/).
