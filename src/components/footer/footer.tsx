@@ -48,7 +48,7 @@ const Footer = () => {
                      </a>
                  </p>
                  <p> 
-                   <a href="Aaronfrazier@northstardevelopmentllc.com"    
+                   <a href="mailto:Aaronfrazier@northstardevelopmentllc.com"    
                     style={{
                       textDecoration: "none",
                       color : "#52525B"
