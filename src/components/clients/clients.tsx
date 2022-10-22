@@ -29,33 +29,33 @@ const Clients = () => {
     const clientsDetails:Array<clientDetailsTypes> = [
         {
             comments : "“Seamless transaction. Extremely knowledgeable professionals who offered sound advice and guidance the entire build AND aftercare and follow up, Highly recommend”",
-            img : eachClientImg(1),
+            img : eachClientImg(3),
             name: "Randal Parker",
-            title: "Freelance React Developer"
+            title: "CEO of Smiles for Miles Inc"
         },
         {
             comments : "“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”",
             img : eachClientImg(2),
             name: "Cesar Cruz",
-            title: "Digital Marketer"
+            title: "Client"
         },
         {
             comments : "“This is single handedly the go-to business for my technology needs. they built and executed my music platform, I will be recommending this company to some of my friends in need of websites and apps.”",
-            img : eachClientImg(3),
+            img : eachClientImg(4),
             name: "Patrick Rodgers",
+            title: "Freelancer"
+        },
+        {
+            comments : "“Northstar helped me build a new PC gaming system for my stream set up so now I can play COD and other FSP games, I will gladly recommend for gaming system and PC building. Aaron knows his onions.”",
+            img : eachClientImg(5),
+            name: "Robert Ireland",
             title: "Graphic Designer"
         },
         {
-            comments : "“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”",
-            img : eachClientImg(3),
+            comments : "“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish. Incase you need landing pages done in seconds, North star got you covered.”",
+            img : eachClientImg(1),
             name: "Jenny Wilson",
-            title: "Graphic Designer"
-        },
-        {
-            comments : "“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”",
-            img : eachClientImg(3),
-            name: "Jenny Wilson",
-            title: "Graphic Designer"
+            title: "Developer & Freelancer"
         }
     ]
     const width = useWindowWidth();
