@@ -8,14 +8,20 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 // importing north star image
 const northstarImg = require('../../assets/illustrations/northstar_sec.png');
 
+
 //JSX Component
 const Footer = () => {
+
   useEffect(() => {
+
     AOS.init()
-  })
+
+  }, [])
+
     return (
       <div className="footer" data-aos-duration="1000" data-aos="fade-in">
           <div className="footers" >
@@ -42,7 +48,7 @@ const Footer = () => {
                      </a>
                  </p>
                  <p> 
-                   <a href=""    
+                   <a href="Aaronfrazier@northstardevelopmentllc.com"    
                     style={{
                       textDecoration: "none",
                       color : "#52525B"

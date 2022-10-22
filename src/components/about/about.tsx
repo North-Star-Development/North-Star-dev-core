@@ -2,20 +2,24 @@
 // 17 U.S.C §§ 101-1511
 
 // import relevant modules
+
 import React, { useEffect } from "react";
 import Button from "../button/button";
 
 //import AOS
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
 //illustration image
+
 const aboutImg = require('../../assets/png/black-people-computer.jpeg');
 // const ss = require('../../assets/illustrations/sha.png');
 // const ss2 = require('../../assets/illustrations/shape.png');
 
 //JSX Component
+
 const About = () => {
   useEffect(() => {
     AOS.init();
@@ -35,5 +39,6 @@ const About = () => {
       </section>
     );
 }
+
 
 export default About;

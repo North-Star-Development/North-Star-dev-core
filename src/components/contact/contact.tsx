@@ -7,6 +7,7 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+//import relevant component
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import Button from "../button/button";
@@ -16,6 +17,7 @@ const mail = require('../../assets/png/mail.png');
 
 // JSX Component
 const Contacts = () => {
+
 
   useEffect(() => {
     AOS.init()
@@ -33,7 +35,7 @@ const Contacts = () => {
           <div className="-c2">
              <p>Send us a message</p>
            <form 
-             action="https://formspree.io/f/mjvjprek"
+             action="https://formspree.io/f/xrgdawav"
              method="POST">
              <input name="name"
                     type="text" 
@@ -63,5 +65,6 @@ const Contacts = () => {
      </div>
     );
 }
+
 
 export default Contacts;

@@ -8,11 +8,13 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 // types
 interface achievementsTypes {
     number : number,
     slug : string
 }
+
 
 //JSX Component
 const Achievements = () => {
@@ -38,9 +40,11 @@ const Achievements = () => {
        }
    ]
 
+
  useEffect(() => {
      AOS.init();
  }, [])
+
     return(
      <div className="achievements" id="achievements">
          <p data-aos-duration="1000" data-aos="fade-in">The numbers don't lie</p>
@@ -58,12 +62,14 @@ const Achievements = () => {
                      </h2>
                     <p className="-a" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-in">{detail?.slug}</p>
                 </div>
-              ))
+              )
+              )
           }
       </div>
      </div>
     
     );
 }
+
 
 export default Achievements;

@@ -51,7 +51,8 @@ const OfferList = () => {
     ]
 
     useEffect(() => {
-      AOS.init()
+      AOS.init();
+
     }, [])
     return (
       <div className="offer" id="services">
@@ -74,3 +75,4 @@ const OfferList = () => {
 }
 
 export default OfferList;
+
