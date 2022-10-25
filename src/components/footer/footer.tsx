@@ -29,7 +29,7 @@ const Footer = () => {
              <div className="footers__">
                  <h3> Socials</h3>
                  <p>
-                  <a href="https://www.linkedin.com/company/tech-with-aj-inc/"
+                  <a href="https://www.linkedin.com/company/northstardevelopmentllc/"
                    style={{
                       textDecoration: "none",
                       color : "#52525B"
